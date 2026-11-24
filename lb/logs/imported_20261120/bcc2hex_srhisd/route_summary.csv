@@ -1,0 +1,2 @@
+total_iterations,search_seconds,solver_seconds,verification_seconds,full_seconds,final_residual,final_energy,E_bcc,final_morse,final_morse_tr,source_code_status,note
+15372,11703.790161,NaN,NaN,NaN,9.998606837976913e-08,-0.16603547499842142,-0.166035640129255,NaN,NaN,frozen_sr1490067_fft_cache,Search-wall includes output; final independent certificate separate.

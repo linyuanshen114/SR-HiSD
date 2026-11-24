@@ -1,0 +1,14 @@
+{
+  "branch": "minus",
+  "sign": -1,
+  "class": "BCC",
+  "converged": true,
+  "force_rms": 9.9703414046743424E-10,
+  "energy": 0.00024901361442588449,
+  "seconds": 186.25948083333333,
+  "updates_lower_bound": 2000,
+  "updates_upper_bound": 4000,
+  "parent_phi_sha256": "01f2c562d07d5dc767bc2b6428dcc62cc371c5bddcaa33b719790aeaf96ed90e",
+  "phi_sha256": "17d3d95e94cb6d83f5746e6d415250eae3904af94eb64ecc3d9d1e8cdd37ba4f",
+  "direction_sha256": "11d3e4b08e06937214489a8d5d3b01dabea7a76fdba100211d9b1f4829e273e9"
+}

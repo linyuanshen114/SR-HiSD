@@ -1,0 +1,127 @@
+{
+  "sign": 1,
+  "status": "force_converged",
+  "updates": 2269,
+  "force_rms": 9.9826326545967149E-10,
+  "force_max": 4.596830749381553E-9,
+  "energy": -0.20040612762064497,
+  "solver_seconds": 469.521786,
+  "endpoint_audit_seconds": 2.30192,
+  "elapsed_seconds": 471.82382,
+  "phase_evidence": {
+    "phase": "HEX",
+    "rms": 1.3341014451928852,
+    "energy": -0.20040612762064497,
+    "six_peak_vectors": [
+      [
+        12,
+        0,
+        12
+      ],
+      [
+        -12,
+        0,
+        -12
+      ],
+      [
+        -12,
+        12,
+        0
+      ],
+      [
+        12,
+        -12,
+        0
+      ],
+      [
+        0,
+        12,
+        12
+      ],
+      [
+        0,
+        -12,
+        -12
+      ]
+    ],
+    "six_peak_power": 0.99920000789496366,
+    "six_peak_relative_spread": 1.3109900226689127E-15,
+    "primary_rank": 2,
+    "offplane_power": 4.4157915556144245E-14,
+    "triad_phase_closure": 2.6875214116859688E-17,
+    "parent_amplitude_relative_error": 0.82662872826117839,
+    "parent_energy_difference": 0.034370487491389712,
+    "hex_reference_match": {
+      "verified": true,
+      "relative_rms_error": 4.5767928291315435E-6,
+      "energy_difference": 1.7486012637846216E-14,
+      "permutation_and_signs": [
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          -1
+        ]
+      ],
+      "translation": [
+        -35.006866586462735,
+        -61.664146994632389,
+        -72.454846707651029
+      ],
+      "proper_cubic_rotations_allowed": true,
+      "relative_rms_threshold": 0.0001,
+      "energy_threshold": 1E-7,
+      "definition": "Full-field reference match by proper box symmetry and continuous Fourier translation; separate from saddle/minimum certification."
+    },
+    "note": "Phase evidence is separate from index and minimum certification; no phase is prescribed by branch sign."
+  },
+  "initial": {
+    "sign": 1,
+    "kick_RMS": 1.0000000000000008E-5,
+    "kick_max": 0.0012247223201991009,
+    "force_rms": 3.0037477248539851E-7,
+    "force_max": 3.7136408965077194E-5,
+    "force_projection": 2.8334269825160864E-7,
+    "force_change_projection": 2.8363223044644539E-7
+  },
+  "error": "",
+  "minimum_hessian_verified": false,
+  "endpoint_file": "/bicmr/home/yslin114/LB/experiments/bcc2hex_lbsd_sequential_bilateral_20261119/results/flow/sign_+1/endpoint.mat",
+  "history_file": "/bicmr/home/yslin114/LB/experiments/bcc2hex_lbsd_sequential_bilateral_20261119/results/flow/sign_+1/history.csv",
+  "np_model_counts_before": {
+    "force": 1,
+    "hvp": 1,
+    "precondition": 0,
+    "energy": 0,
+    "tangent": 0,
+    "position": 0,
+    "fft_forward": 2,
+    "fft_inverse": 2,
+    "seconds_force": 0.09802,
+    "seconds_hvp": 0.120559,
+    "seconds_precondition": 0,
+    "seconds_energy": 0,
+    "seconds_tangent": 0,
+    "seconds_position": 0
+  },
+  "np_model_counts_after": {
+    "force": 2274,
+    "hvp": 1,
+    "precondition": 0,
+    "energy": 29,
+    "tangent": 0,
+    "position": 2269,
+    "fft_forward": 4580,
+    "fft_inverse": 4575,
+    "seconds_force": 233.42850199999981,
+    "seconds_hvp": 0.120559,
+    "seconds_precondition": 0,
+    "seconds_energy": 4.4938819999999975,
+    "seconds_tangent": 0,
+    "seconds_position": 220.55448099999956
+  }
+}

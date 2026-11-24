@@ -1,0 +1,196 @@
+{
+  "task": "morse2d",
+  "article_result": "Table 1",
+  "description": "Two-dimensional Morse clusters: shared-initial-state success rates for HiSD, SR-HiSD and NPSS at N=5–10.",
+  "origin": {
+    "note": "Source paths describe the original package layout; the task code and scientific data are included here.",
+    "numerical_sources": [
+      "functions/morse/morse2d/infra",
+      "functions/morse/morse2d/methods",
+      "functions/morse/npss/methods"
+    ],
+    "experiment_sources": [
+      "functions/morse/morse2d/infra/benchmark_morse2d.m",
+      "example/morse/table1/run_table1.m",
+      "example/morse/npss/run_npss.m"
+    ],
+    "input_sources": [
+      "data/morse2d/input",
+      "data/npss/input"
+    ],
+    "saved_calculation": "The complete 21,000-search calculation supplies the stored endpoints, trial records and success rates."
+  },
+  "included_outputs": "results/paper",
+  "runtime_files": [
+    {
+      "path": "functions/morse_certificate.m",
+      "sha256": "6e208837c2e313dc5476a7e850cef0bc6911477912fb9b6bf53cb1a5cae1d383"
+    },
+    {
+      "path": "functions/morse_energy_gradient_hessian.m",
+      "sha256": "17df82661875265822c5690ca8037e34fd08c3661e80662e6ca7e5673629f759"
+    },
+    {
+      "path": "functions/morse_gradient_descent.m",
+      "sha256": "7d70297ae11b07c7a0fb42f9a575bba08c4509d9ecbb639d8f0f1bcda127001f"
+    },
+    {
+      "path": "functions/morse_hisd.m",
+      "sha256": "af9a7d97fe291625babe6e9086846bc09827012dd08944f6243eb6268f438bb6"
+    },
+    {
+      "path": "functions/morse_npss.m",
+      "sha256": "bb140781ca68f1786b80e4a67f25b0b9019aac5eb6e8a54b935fec423730f3a5"
+    },
+    {
+      "path": "functions/morse_rigid_basis.m",
+      "sha256": "5ab81323dec7acdaf81abdfe035f26293ff19df209bbd7c3a008640ef916fb13"
+    },
+    {
+      "path": "functions/morse_ritz_step.m",
+      "sha256": "8a2e2a59ab4275c9ba2b6bbfaef567bcb3dc61c9a374603a310cd8146ce0c28f"
+    },
+    {
+      "path": "functions/morse_srhisd.m",
+      "sha256": "a565b88e4e47ace487340bb0c18facd946205adb96e8d589ce30abf5bf8f2350"
+    },
+    {
+      "path": "functions/morse_table_sources.m",
+      "sha256": "1f720bed2c5736a272b8726cf3c2b7ad100c4d02a7375e02bd2e6f8a687606cc"
+    },
+    {
+      "path": "scripts/npss.m",
+      "sha256": "e8d5085419860c45eed6239480edd71a0f9ce5ae75269ff4c6911bc246dfef5d"
+    },
+    {
+      "path": "scripts/original_methods.m",
+      "sha256": "d3921702e14d0f2e379fcc7832590327208bfaac598d5327b7627e8784781a69"
+    },
+    {
+      "path": "scripts/plot_table1.m",
+      "sha256": "0785135e7a40e6a66fb9132475ea0f317526fc97e7b46ed99eea6f1b28cae8c4"
+    }
+  ],
+  "data_files": [
+    {
+      "path": "data/initial_states/n10.mat",
+      "role": "Shared trial initial states.",
+      "sha256": "35228f49200ce8a8cf88b747aed3fa27a704aca6b53c68772260e0b6de58068e"
+    },
+    {
+      "path": "data/initial_states/n5.mat",
+      "role": "Shared trial initial states.",
+      "sha256": "234548ae8fba81b8856c954686193dfa19219dc0cc79122429382f699f163b43"
+    },
+    {
+      "path": "data/initial_states/n6.mat",
+      "role": "Shared trial initial states.",
+      "sha256": "a58818838b705d438ae30d742e5eb00aca4abc839d81a9198c20fc9069252b0e"
+    },
+    {
+      "path": "data/initial_states/n7.mat",
+      "role": "Shared trial initial states.",
+      "sha256": "c3d05e9f606da89690a520a7520421c3481a65293463817975ef1e5bf098078b"
+    },
+    {
+      "path": "data/initial_states/n8.mat",
+      "role": "Shared trial initial states.",
+      "sha256": "eba3919f338c7659826bacc92a46175a3e1f6c0aef17f5a05001681a3ca72722"
+    },
+    {
+      "path": "data/initial_states/n9.mat",
+      "role": "Shared trial initial states.",
+      "sha256": "bd4c2fbf2a1a731d9bd2aff1922e4eaef3e23905b1e59a555466b8b3bc276ffe"
+    },
+    {
+      "path": "data/minima/n10.mat",
+      "role": "Minimum used for endpoint certification.",
+      "sha256": "af9fce3aa9521ac389fff196eec9e5bb4c59dc1682210240466764dacf667696"
+    },
+    {
+      "path": "data/minima/n5.mat",
+      "role": "Minimum used for endpoint certification.",
+      "sha256": "0a9376604599a4c87ccc88f1572e14c701cf31cedc37efdd522bda0c2b92a98c"
+    },
+    {
+      "path": "data/minima/n6.mat",
+      "role": "Minimum used for endpoint certification.",
+      "sha256": "a0c9d732cc3c398c214d4170d476fec1a0110eefa94e47482b0a7fa64fd9559a"
+    },
+    {
+      "path": "data/minima/n7.mat",
+      "role": "Minimum used for endpoint certification.",
+      "sha256": "0124df7e67f33db4223ff5248c9f0d243e154c4999067dc37ccb9b1c1c705e93"
+    },
+    {
+      "path": "data/minima/n8.mat",
+      "role": "Minimum used for endpoint certification.",
+      "sha256": "446aa41b4414abc1464e12ec208d78020a7179210a372c5328744555e9b101d3"
+    },
+    {
+      "path": "data/minima/n9.mat",
+      "role": "Minimum used for endpoint certification.",
+      "sha256": "69e8d5d81dfdb3bb251b6db98b0f53eb2ed5fea68714736a0e90308bfcb8f9b1"
+    },
+    {
+      "path": "data/paper/table1.csv",
+      "role": "Article values used to check the calculated result.",
+      "sha256": "122a53602921986679a606e93dc87444f7efbec2d9d705d5abb9b4f580cafbf8"
+    },
+    {
+      "path": "data/reference/PROMOTED_FROM.json",
+      "role": "Source and stored-result provenance.",
+      "sha256": "9414f5268c3cefd54bbdba8934db9102262cc24bf1fb47287f1104159b57bbe0"
+    },
+    {
+      "path": "data/reference/npss/rates.csv",
+      "role": "Success counts and rates.",
+      "sha256": "f02b666e5c99cffc46c6e5bae844968f6eb85f964fbfd7fdde1ef525accef03f"
+    },
+    {
+      "path": "data/reference/npss/result.mat",
+      "role": "Saved endpoints, trial records, success rates and calculation settings.",
+      "sha256": "8fa12c0724f86e963ede39a4e9c32b8f33e17342eb1437226f62746a9cdfdec9"
+    },
+    {
+      "path": "data/reference/npss/trials.csv",
+      "role": "Trial diagnostics, iteration counts and elapsed times.",
+      "sha256": "8013a6651cbda860f80a47cf730cc13154887b5f2ff0fe44a6a86a60b2be33b7"
+    },
+    {
+      "path": "data/reference/original_methods/rates.csv",
+      "role": "Success counts and rates.",
+      "sha256": "ea7d7429805958cf8af79bbd49fb0d6d41bc318df99c8df2d20a7bc448dbbfea"
+    },
+    {
+      "path": "data/reference/original_methods/result.mat",
+      "role": "Saved endpoints, trial records, success rates and calculation settings.",
+      "sha256": "e9ad204bcdac3164ca80e33f7a9431b09acf8b48751bba5d9c0610c8e2733be4"
+    },
+    {
+      "path": "data/reference/original_methods/trials.csv",
+      "role": "Trial diagnostics, iteration counts and elapsed times.",
+      "sha256": "eb7bc7401b16de4983c8d2bd52995c58ee048bc87c4d77a92c4b86a7b0f425db"
+    },
+    {
+      "path": "data/reference/plot_table1/result.mat",
+      "role": "Saved Table 1 values.",
+      "sha256": "6ce801907c3f5e3bb5b0cf396e6f37326cced8f3531edae66c2c63d607bd3d5b"
+    },
+    {
+      "path": "data/reference/plot_table1/table1.csv",
+      "role": "Saved Table 1 values.",
+      "sha256": "fac58840d448d7c472a56ce04f1f89fc500f8ee78e8c221b10a95a1128a4d776"
+    },
+    {
+      "path": "data/reference/plot_table1/table1.pdf",
+      "role": "Stored figure of the saved numerical result.",
+      "sha256": "ecc9a0bfff48cab19e9813ad1a2c94ea2fb9840d4e4f54cf050efb251dcbf10e"
+    },
+    {
+      "path": "data/reference/plot_table1/table1.png",
+      "role": "Stored figure of the saved numerical result.",
+      "sha256": "195f3b439f8a999b2be591dd97dcad387196ca2b11d3a567c0f43e86c3fa4ff2"
+    }
+  ]
+}

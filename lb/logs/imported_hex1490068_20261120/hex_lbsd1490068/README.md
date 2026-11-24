@@ -1,0 +1,10 @@
+# BCC→HEX historical 4-LBSD initial block rebenchmark
+
+This is an independent re-run. Input `phi_init` and all 4 columns of `V_init` are read without modification from the historical 1487325 checkpoint. The 4th vector is the same unprojected LBSD input vector given to SR task 1490067 before SR's current-tangent projection. `initial_audit.json` reports field and four-column exactness, original/entry Gram errors, each entrance Gram–Schmidt change, the relative projected SR direction and full preparation time. `initial_exact.mat` preserves the submitted phi and four columns. No tangent projection is applied to the LBSD input or its dynamics.
+
+- LB model: N=128, L=24 sqrt(2) pi, tau=-0.3, gamma=0.8; mean-zero.
+- Pure 4-LBSD then original-space LBSD downward, dt=.24, absolute BB range [.2,2], full-force RMS tol 1e-7, W/Vp cutoff 1e-8.
+- Index gate: original mean-zero raw Hessian, warm and cold LOBPCG, k=12, zero band ±1e-7, sign classified by raw eigen-residual interval; failure or zero-band ambiguity is unresolved. Numerical low-spectrum evidence is not a rigorous global enclosure.
+- Downward kick RMS .001, then .002/.004 only when both signs are too small or independently confirmed return to the parent. If 3-LBSD lands at actual index 2 then 1-LBSD follows directly. The 4-LBSD ascending candidate may be index 4 or 5; only a verified index4 candidate is eligible for the following path.
+- Save every stage/branch; record solver, raw spectral diagnostics, attempt and route wall time separately, including failed branches. `route_wall_seconds` starts after initial audit and preparation. `preparation_seconds` is recorded separately; Slurm elapsed includes startup and tests. Costs should be interpreted independently of the SR timing. Terminal TS connectivity is not established without bilateral GF.
+- Three smoke tests run on the compute node before the main calculation. A stage's start and end are saved; there is no safe automatic mid-stage restart. Slurm time limit is 72 h, 4 physical cores/16 GB on a shared node.

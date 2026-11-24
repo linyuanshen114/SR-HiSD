@@ -1,0 +1,157 @@
+{
+  "task": "morse3d",
+  "article_result": "Figure 1",
+  "description": "Eight-particle three-dimensional Morse landscape: HiSD and SR-HiSD searches, saddle states and bilateral gradient descent.",
+  "origin": {
+    "note": "Source paths describe the original package layout; the task code and scientific data are included here.",
+    "numerical_sources": [
+      "functions/morse/morse3d/infra",
+      "functions/morse/morse3d/methods"
+    ],
+    "experiment_sources": [
+      "example/morse/landscape3d/scripts/main_3d_srhisd_hisd_landscape_plan_strict.m"
+    ],
+    "input_sources": [
+      "data/morse3d/input/minimum.mat"
+    ],
+    "saved_calculation": "The complete calculation supplies 17 states, 106 recorded transitions and their comparison records."
+  },
+  "included_outputs": "results/paper",
+  "runtime_files": [
+    {
+      "path": "functions/morse3d_add_edge.m",
+      "sha256": "2b4bc5fba4d72b218c7133c4ba94e7410adfac5456edb72aeec4caaa0d1ffde4"
+    },
+    {
+      "path": "functions/morse3d_check_paper_result.m",
+      "sha256": "c032a684fb015a42851740249d3a34ed3c17bd868505dc3bd1995c7959e42211"
+    },
+    {
+      "path": "functions/morse3d_continue.m",
+      "sha256": "87bfe5ae28b125fec97677ea6c4d7dc6767dd1e6a77ceb213f5b51badb96a06b"
+    },
+    {
+      "path": "functions/morse3d_draw_cluster.m",
+      "sha256": "1941929ddd06b08df62a6c3e2fe8f53c7a22d2f53643b31bb14ca43b588c6ca4"
+    },
+    {
+      "path": "functions/morse3d_energy.m",
+      "sha256": "14fd82818fe0b44499422a644e154e1acd6d7abdaa57825b7fa8b4025e9f781c"
+    },
+    {
+      "path": "functions/morse3d_gradient_descent.m",
+      "sha256": "51603b5b570ef9f08f719b0737125c240113effdaadcf6f486f5241403fcae7b"
+    },
+    {
+      "path": "functions/morse3d_hisd.m",
+      "sha256": "8ca30d66cfbce5c8bcbdcbd124ae099c7b97797dd98989d60f4e8806a81a4651"
+    },
+    {
+      "path": "functions/morse3d_initial_frame.m",
+      "sha256": "eaf7f2b26f5875dbc1eae3edbdc860dc2d5fb61a357e8174c2de34044e0ed8f2"
+    },
+    {
+      "path": "functions/morse3d_make_node.m",
+      "sha256": "151bbf1e33d0b0898196ad08e27beb2378ef312ec176ba815b68b8b32229d4fa"
+    },
+    {
+      "path": "functions/morse3d_merge.m",
+      "sha256": "4a21f306ea3fe98af4e1f5af75a8a5b17b2b1f21fe4e8da421b7f7cc7bf79b88"
+    },
+    {
+      "path": "functions/morse3d_record.m",
+      "sha256": "09978b7c907f17d43499b028d4f844e56910dd08a3255eecd775a0a30cf8f0c1"
+    },
+    {
+      "path": "functions/morse3d_rigid_basis.m",
+      "sha256": "065b1c82407de2b85b5e0e805f1e6629b6f8f2b54ee6ae6f0fc8808797293272"
+    },
+    {
+      "path": "functions/morse3d_save_result.m",
+      "sha256": "1e934f7f64c04bccb898f3ff5939c6ea3b8f314aa4cc9890d5bec85b1917f1b8"
+    },
+    {
+      "path": "functions/morse3d_srhisd.m",
+      "sha256": "f9609991e06e0cadcad7f19c9dc8bf159dbe173defb38276c8b39c08f9025dfb"
+    },
+    {
+      "path": "scripts/compare_methods.m",
+      "sha256": "d67e9b28131ac3d4f4982e69643be3ca99fc856fc00e4177c22d0c15373854ad"
+    },
+    {
+      "path": "scripts/landscape.m",
+      "sha256": "160f1cfa6459ed4da8e5f6fe077b07b638abd7802d3a223cfba745fc91579f0d"
+    },
+    {
+      "path": "scripts/plot_figure1.m",
+      "sha256": "ee52cc550f559fd8f6a46016413228fa10e4bef10b7914381d5991dc270d502a"
+    }
+  ],
+  "data_files": [
+    {
+      "path": "data/input/minimum.mat",
+      "role": "Minimum used to initialize the landscape calculation.",
+      "sha256": "8af6bde9f33d1cc4a4d647895dbbb7b459b7dc43baa38c51cd06270266439c4e"
+    },
+    {
+      "path": "data/paper/figure1_states.csv",
+      "role": "Article values used to check the calculated result.",
+      "sha256": "0409853e05191ade771e77b30736e8baddf64eaf8d2302d4fd30cbc4ae1de709"
+    },
+    {
+      "path": "data/provenance.json",
+      "role": "Source and stored-result provenance.",
+      "sha256": "0056f9d4c158febda079a88eb70aff4364916c905efd70656a1698c049897901"
+    },
+    {
+      "path": "data/reference/compare_methods/compare_rows.csv",
+      "role": "Search diagnostics, iteration counts and elapsed times.",
+      "sha256": "975f768e6efea861e19e5beb8e520dea15f454f0bba9766bd782c9cf7623b60d"
+    },
+    {
+      "path": "data/reference/compare_methods/landscape_edges.csv",
+      "role": "Recorded state transitions.",
+      "sha256": "b45465f14a7cf77166ce9cde75b163e1c2913184822a3105bc6fda18c50c1c64"
+    },
+    {
+      "path": "data/reference/compare_methods/landscape_nodes.csv",
+      "role": "State labels, energies, indices and residuals.",
+      "sha256": "36c7653f576cf12ed558190f0a640d331c25ec051aab4c0275ee6071c055db35"
+    },
+    {
+      "path": "data/reference/compare_methods/result.mat",
+      "role": "Saved HiSD and SR-HiSD comparison results.",
+      "sha256": "f919b055b3a4c2b3e68be417a109bbf206700b8255924e5c087d2befbcae600a"
+    },
+    {
+      "path": "data/reference/compare_rows.csv",
+      "role": "Search diagnostics, iteration counts and elapsed times.",
+      "sha256": "0a7266071aef4a49b2c3f76f2f5fe43ca0a95b7525e553d9e2bc25474f02a180"
+    },
+    {
+      "path": "data/reference/figure1.pdf",
+      "role": "Stored figure of the saved numerical result.",
+      "sha256": "cdc77986c7c5e6d79a6d05ede1a1a070c940301de310a9521d7097fef8224756"
+    },
+    {
+      "path": "data/reference/figure1.png",
+      "role": "Stored figure of the saved numerical result.",
+      "sha256": "63f043a09ec82436bc0dc8b9415251dfbaddd8eab6d610a402e5b023912cf44c"
+    },
+    {
+      "path": "data/reference/landscape_edges.csv",
+      "role": "Recorded state transitions.",
+      "sha256": "d6114b9af63cdf4601ff56fd494e5413ccd3d43c9d5de406c86cb9b484e85aa7"
+    },
+    {
+      "path": "data/reference/landscape_nodes.csv",
+      "role": "State labels, energies, indices and residuals.",
+      "sha256": "55f8cec5e7533f9379cf6b34b76886a9a8daa753cda81573db2b80b53e52ced1"
+    },
+    {
+      "path": "data/reference/result.mat",
+      "role": "Saved landscape states, transitions and search records.",
+      "sha256": "6f84073bcb3025080de65d8408f8a4b59bdf61999a66cb974daee0b8c3caf797"
+    }
+  ]
+}

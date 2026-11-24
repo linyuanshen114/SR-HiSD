@@ -1,0 +1,2 @@
+stage,sign,iterations,residual,energy,morse,elapsed_seconds,solver_seconds
+direct_1_srhisd,1,15372,9.998606837976913e-08,-0.16603547499842142,NaN,11703.790161,NaN

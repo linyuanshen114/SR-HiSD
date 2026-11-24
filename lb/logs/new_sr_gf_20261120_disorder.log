@@ -1,0 +1,13 @@
+spectrum it=1 residual=1.120e-07 lowest=-8.6553472281e-03
+spectrum it=10 residual=2.063e-08 lowest=-8.6553472281e-03
+spectrum it=13 residual=5.196e-09 lowest=-8.6553472281e-03
+Verified SR32410 parent 01f2c562d07d5dc767bc2b6428dcc62cc371c5bddcaa33b719790aeaf96ed90e: force 9.998515e-08 lambda -0.00865534722807 rawres 5.196385e-09 Fv 2.191395e-13
+gf-after0 it=2000  res=3.107e-04  E=1.053697e-04
+GF CHECKPOINT gf sign+1 bounds=[2000,2000] RMS=3.103678e-04 E=0.000105276121908 seconds=162.6
+GF CHECKPOINT gf sign+1 bounds=[2000,4000] RMS=9.930866e-10 E=9.67927427113e-18 seconds=305.5
+FINISHED disorder SR branch plus: converged 1 class disorder RMS 9.930866e-10 seconds 305.9
+gf-after0 it=2000  res=9.913e-08  E=2.490136e-04
+GF CHECKPOINT gf sign-1 bounds=[2000,2000] RMS=9.877740e-08 E=0.000249013615763 seconds=115.4
+GF CHECKPOINT gf sign-1 bounds=[2000,4000] RMS=9.970341e-10 E=0.000249013614426 seconds=186.0
+FINISHED disorder SR branch minus: converged 1 class BCC RMS 9.970341e-10 seconds 186.3
+DISORDER SR32410 complete bilateral GF PASS.

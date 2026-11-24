@@ -1,0 +1,175 @@
+job=1490166 source=/bicmr/home/yslin114/LB/nphisd_lobpcg_si_20261028/experiments/sr_fft_hex_histlbsd_v4_20261117/results/bcc2hex/sr_fft/final.mat host=c04.cluster-bicmr.com date=2026-11-19T03:51:04+08:00
+Warning: X does not support locale C.UTF-8
+N8_CERT_SMOKE_PASS
+SR_PHASE_START full_warm force=0.00255936218579
+spectrum it=1 residual=1.382e-01 lowest=-2.2079216298e-01
+spectrum it=2 residual=8.099e-02 lowest=-2.6437705372e-01
+SR_PHASE_END full_warm status=budget_exhausted prefix_verified=0 index=NaN seconds=0.015
+SR_PHASE_START reduced_cold force=0.00255936218579
+spectrum it=1 residual=1.385e-01 lowest=-2.0355071428e-01
+spectrum it=2 residual=8.361e-02 lowest=-2.6100940572e-01
+SR_PHASE_END reduced_cold status=budget_exhausted prefix_verified=0 index=NaN seconds=0.012
+SR_PHASE_N8_SMOKE_PASS
+Warning: X does not support locale C.UTF-8
+SR_PHASE_START full_warm force=9.99860683798e-08
+spectrum it=1 residual=7.223e+00 lowest=-2.8298192864e-02
+spectrum it=50 residual=1.650e-02 lowest=-2.8298192864e-02
+spectrum it=100 residual=4.530e-03 lowest=-2.8298192864e-02
+spectrum it=150 residual=1.903e-03 lowest=-2.8298192864e-02
+spectrum it=200 residual=1.336e-03 lowest=-2.8298192864e-02
+spectrum it=250 residual=6.596e-04 lowest=-2.8298192864e-02
+spectrum it=300 residual=6.244e-04 lowest=-2.8298192864e-02
+spectrum it=350 residual=1.105e-03 lowest=-2.8298192864e-02
+spectrum it=400 residual=3.627e-04 lowest=-2.8298192864e-02
+spectrum it=450 residual=4.043e-04 lowest=-2.8298192864e-02
+spectrum it=500 residual=1.991e-04 lowest=-2.8298192864e-02
+spectrum it=550 residual=1.935e-04 lowest=-2.8298192864e-02
+spectrum it=600 residual=8.803e-04 lowest=-2.8298192864e-02
+spectrum it=650 residual=7.003e-04 lowest=-2.8298192864e-02
+spectrum it=700 residual=3.183e-04 lowest=-2.8298192864e-02
+spectrum it=750 residual=3.844e-04 lowest=-2.8298192864e-02
+spectrum it=800 residual=3.566e-04 lowest=-2.8298192864e-02
+spectrum it=850 residual=2.245e-04 lowest=-2.8298192864e-02
+spectrum it=900 residual=1.920e-04 lowest=-2.8298192864e-02
+spectrum it=950 residual=1.228e-04 lowest=-2.8298192864e-02
+spectrum it=1000 residual=2.121e-04 lowest=-2.8298192864e-02
+spectrum it=1050 residual=1.881e-04 lowest=-2.8298192864e-02
+spectrum it=1100 residual=2.296e-04 lowest=-2.8298192864e-02
+spectrum it=1150 residual=1.581e-04 lowest=-2.8298192864e-02
+SR_PHASE_END full_warm status=time_budget_exhausted prefix_verified=1 index=1 seconds=7205.426
+Warning: X does not support locale C.UTF-8
+SR_PHASE_START full_cold force=9.99860683798e-08
+spectrum it=1 residual=7.267e+00 lowest=+1.4849873788e+00
+spectrum it=50 residual=1.445e-02 lowest=-2.8298097796e-02
+spectrum it=100 residual=3.871e-03 lowest=-2.8298192864e-02
+spectrum it=150 residual=9.418e-04 lowest=-2.8298192864e-02
+spectrum it=200 residual=1.191e-03 lowest=-2.8298192864e-02
+spectrum it=250 residual=3.470e-04 lowest=-2.8298192864e-02
+spectrum it=300 residual=2.882e-04 lowest=-2.8298192864e-02
+spectrum it=350 residual=3.320e-04 lowest=-2.8298192864e-02
+spectrum it=400 residual=2.086e-04 lowest=-2.8298192864e-02
+spectrum it=450 residual=4.921e-04 lowest=-2.8298192864e-02
+spectrum it=500 residual=8.257e-04 lowest=-2.8298192864e-02
+spectrum it=550 residual=6.311e-04 lowest=-2.8298192864e-02
+spectrum it=600 residual=6.237e-04 lowest=-2.8298192864e-02
+spectrum it=650 residual=5.411e-04 lowest=-2.8298192864e-02
+spectrum it=700 residual=6.923e-04 lowest=-2.8298192864e-02
+spectrum it=750 residual=4.650e-04 lowest=-2.8298192864e-02
+spectrum it=800 residual=6.229e-04 lowest=-2.8298192864e-02
+spectrum it=850 residual=8.475e-04 lowest=-2.8298192864e-02
+spectrum it=900 residual=4.412e-04 lowest=-2.8298192864e-02
+spectrum it=950 residual=4.479e-04 lowest=-2.8298192864e-02
+spectrum it=1000 residual=2.595e-04 lowest=-2.8298192864e-02
+spectrum it=1050 residual=1.579e-04 lowest=-2.8298192864e-02
+SR_PHASE_END full_cold status=time_budget_exhausted prefix_verified=1 index=1 seconds=7201.216
+Warning: X does not support locale C.UTF-8
+SR_PHASE_START reduced_warm force=9.99860683798e-08
+spectrum it=1 residual=7.239e+00 lowest=-2.8298192864e-02
+spectrum it=50 residual=1.597e-02 lowest=-2.8298192864e-02
+spectrum it=100 residual=4.019e-03 lowest=-2.8298192864e-02
+spectrum it=150 residual=1.796e-03 lowest=-2.8298192864e-02
+spectrum it=200 residual=1.900e-03 lowest=-2.8298192864e-02
+spectrum it=250 residual=1.403e-03 lowest=-2.8298192864e-02
+spectrum it=300 residual=6.461e-04 lowest=-2.8298192864e-02
+spectrum it=350 residual=2.541e-04 lowest=-2.8298192864e-02
+spectrum it=400 residual=6.328e-04 lowest=-2.8298192864e-02
+spectrum it=450 residual=4.147e-04 lowest=-2.8298192864e-02
+spectrum it=500 residual=4.205e-04 lowest=-2.8298192864e-02
+spectrum it=550 residual=4.938e-04 lowest=-2.8298192864e-02
+spectrum it=600 residual=7.369e-04 lowest=-2.8298192864e-02
+spectrum it=650 residual=3.765e-04 lowest=-2.8298192864e-02
+spectrum it=700 residual=1.769e-04 lowest=-2.8298192864e-02
+spectrum it=750 residual=1.032e-04 lowest=-2.8298192864e-02
+spectrum it=800 residual=6.211e-05 lowest=-2.8298192864e-02
+spectrum it=850 residual=7.818e-05 lowest=-2.8298192864e-02
+spectrum it=900 residual=7.169e-05 lowest=-2.8298192864e-02
+SR_PHASE_END reduced_warm status=time_budget_exhausted prefix_verified=1 index=1 seconds=7203.683
+Warning: X does not support locale C.UTF-8
+SR_PHASE_START reduced_cold force=9.99860683798e-08
+spectrum it=1 residual=7.247e+00 lowest=+1.4866595171e+00
+spectrum it=50 residual=1.609e-02 lowest=-2.8298129523e-02
+spectrum it=100 residual=3.377e-03 lowest=-2.8298192864e-02
+spectrum it=150 residual=1.380e-03 lowest=-2.8298192864e-02
+spectrum it=200 residual=2.339e-03 lowest=-2.8298192864e-02
+spectrum it=250 residual=7.116e-04 lowest=-2.8298192864e-02
+spectrum it=300 residual=3.542e-04 lowest=-2.8298192864e-02
+spectrum it=350 residual=5.661e-04 lowest=-2.8298192864e-02
+spectrum it=400 residual=3.499e-04 lowest=-2.8298192864e-02
+spectrum it=450 residual=2.028e-04 lowest=-2.8298192864e-02
+spectrum it=500 residual=1.346e-04 lowest=-2.8298192864e-02
+spectrum it=550 residual=1.831e-04 lowest=-2.8298192864e-02
+spectrum it=600 residual=4.661e-04 lowest=-2.8298192864e-02
+spectrum it=650 residual=3.138e-04 lowest=-2.8298192864e-02
+spectrum it=700 residual=4.254e-04 lowest=-2.8298192864e-02
+spectrum it=750 residual=3.859e-04 lowest=-2.8298192864e-02
+spectrum it=800 residual=1.103e-04 lowest=-2.8298192864e-02
+spectrum it=850 residual=1.161e-04 lowest=-2.8298192864e-02
+spectrum it=900 residual=1.244e-04 lowest=-2.8298192864e-02
+SR_PHASE_END reduced_cold status=time_budget_exhausted prefix_verified=1 index=1 seconds=7203.742
+START reduced/warm block=8 long_call_budget=300 tol=2.500e-10
+PROGRESS reduced/warm A_calls=200 HVP=1440 elapsed=636.3s
+CHECK reduced/warm budget=300 lambda=[-0.02829819  0.00094338  0.00095599  0.00095693  0.0031229   0.00312483
+  0.00312827  0.00313325] eta=[2.03524869e-10 2.59519663e-07 3.57633290e-06 2.18746028e-06
+ 4.98512020e-04 1.49350679e-04 3.90821144e-04 8.94257583e-04] raw_eta=[1.81488318e-09 2.59527282e-07 3.57633325e-06 2.18746072e-06
+ 4.98512020e-04 1.49350679e-04 3.90821144e-04 8.94257583e-04] index=None prefix_certified=False
+START reduced/warm block=8 long_call_budget=300 tol=2.500e-10
+PROGRESS reduced/warm A_calls=400 HVP=2843 elapsed=1259.5s
+PROGRESS reduced/warm A_calls=600 HVP=3749 elapsed=1700.1s
+CHECK reduced/warm budget=600 lambda=[-0.02829819  0.00094338  0.00095599  0.00095693  0.00311725  0.00311975
+  0.00312167  0.00312747] eta=[1.98420737e-10 1.58757819e-11 2.12894357e-10 1.99011411e-10
+ 2.54369587e-04 1.77184622e-04 1.71640280e-04 1.46512440e-04] raw_eta=[1.81431789e-09 1.98861616e-09 1.60607997e-09 1.40417317e-09
+ 2.54369587e-04 1.77184622e-04 1.71640280e-04 1.46512440e-04] index=1 prefix_certified=True
+START full/warm block=12 long_call_budget=300 tol=2.500e-10
+PROGRESS full/warm A_calls=200 HVP=2007 elapsed=811.3s
+CHECK full/warm budget=300 lambda=[-2.82981929e-02 -2.03263179e-09  9.62969883e-10  9.75826631e-10
+  9.43379496e-04  9.55986423e-04  9.56931479e-04  3.11880040e-03
+  3.12209306e-03  3.12400054e-03  3.12853671e-03  3.13456362e-03] eta=[2.04397290e-10 6.55641701e-11 4.79083244e-11 6.80589840e-11
+ 9.37024459e-09 9.85525614e-08 2.01119129e-07 4.44699976e-04
+ 3.02089369e-04 5.11964877e-04 5.23587396e-04 5.80330792e-04] raw_eta=[2.04397296e-10 6.55643401e-11 4.79088590e-11 6.80589511e-11
+ 9.37024460e-09 9.85525614e-08 2.01119129e-07 4.44699976e-04
+ 3.02089369e-04 5.11964877e-04 5.23587396e-04 5.80330792e-04] index=2 prefix_certified=True
+START reduced/cold block=10 long_call_budget=300 tol=2.500e-10
+PROGRESS reduced/cold A_calls=200 HVP=1975 elapsed=837.9s
+CHECK reduced/cold budget=300 lambda=[-0.02829819  0.00094338  0.00095599  0.00095693  0.0031179   0.0031203
+  0.00312416  0.00312693  0.00312913  0.00313684] eta=[2.39825115e-10 2.53668472e-06 3.76194120e-07 1.35188459e-06
+ 1.47387172e-04 3.66197386e-04 6.37764462e-04 5.75104721e-04
+ 3.40812263e-04 8.28062771e-04] raw_eta=[1.81931160e-09 2.53668549e-06 3.76197488e-07 1.35188531e-06
+ 1.47387172e-04 3.66197386e-04 6.37764462e-04 5.75104721e-04
+ 3.40812264e-04 8.28062771e-04] index=None prefix_certified=False
+START reduced/cold block=10 long_call_budget=300 tol=2.500e-10
+PROGRESS reduced/cold A_calls=400 HVP=3778 elapsed=1620.0s
+PROGRESS reduced/cold A_calls=600 HVP=5083 elapsed=2222.7s
+CHECK reduced/cold budget=600 lambda=[-0.02829819  0.00094338  0.00095599  0.00095693  0.00311686  0.00311774
+  0.00311953  0.00312184  0.00312501  0.00312633] eta=[2.36773887e-10 1.66374039e-10 9.06538779e-11 9.71870942e-11
+ 4.86226715e-05 9.48107919e-05 1.17352088e-04 1.96892074e-04
+ 1.25084618e-04 1.19760299e-04] raw_eta=[1.81891190e-09 1.99550056e-09 1.59448648e-09 1.39339230e-09
+ 4.86226715e-05 9.48107920e-05 1.17352088e-04 1.96892074e-04
+ 1.25084618e-04 1.19760299e-04] index=1 prefix_certified=True
+START full/cold block=14 long_call_budget=300 tol=2.500e-10
+PROGRESS full/cold A_calls=200 HVP=2778 elapsed=1090.5s
+CHECK full/cold budget=300 lambda=[-2.82981929e-02 -2.03263175e-09  9.62969884e-10  9.75826632e-10
+  9.43379496e-04  9.55986423e-04  9.56931480e-04  3.11714309e-03
+  3.12022978e-03  3.12172540e-03  3.12309399e-03  3.12663925e-03
+  3.12829784e-03  3.13431152e-03] eta=[2.28253015e-10 5.78011725e-09 8.06191543e-10 2.39752000e-09
+ 3.64098131e-07 3.10238568e-07 7.96941829e-07 1.01795780e-04
+ 4.25318813e-04 2.55141459e-04 3.64060938e-04 2.07060529e-04
+ 6.09721949e-04 3.32986591e-04] raw_eta=[2.28253009e-10 5.78011723e-09 8.06191581e-10 2.39751996e-09
+ 3.64098131e-07 3.10238568e-07 7.96941829e-07 1.01795780e-04
+ 4.25318813e-04 2.55141459e-04 3.64060938e-04 2.07060529e-04
+ 6.09721949e-04 3.32986591e-04] index=None prefix_certified=False
+START full/cold block=14 long_call_budget=300 tol=9.758e-11
+PROGRESS full/cold A_calls=400 HVP=5230 elapsed=2069.9s
+PROGRESS full/cold A_calls=600 HVP=6760 elapsed=2742.3s
+CHECK full/cold budget=600 lambda=[-2.82981929e-02 -2.03263178e-09  9.62969891e-10  9.75826626e-10
+  9.43379496e-04  9.55986423e-04  9.56931479e-04  3.11677577e-03
+  3.11750710e-03  3.11868395e-03  3.11884272e-03  3.12324201e-03
+  3.12382217e-03  3.12584567e-03] eta=[7.32614547e-11 2.58117944e-11 1.90424658e-11 1.26557038e-11
+ 3.89526511e-11 3.46106339e-11 8.79673469e-11 2.14323250e-05
+ 7.83257816e-05 2.25484250e-05 7.18015874e-05 3.93307554e-05
+ 8.15213486e-05 3.10944293e-05] raw_eta=[7.32615057e-11 2.58118111e-11 1.90425630e-11 1.26557569e-11
+ 3.89526529e-11 3.46107019e-11 8.79673379e-11 2.14323250e-05
+ 7.83257816e-05 2.25484250e-05 7.18015874e-05 3.93307554e-05
+ 8.15213486e-05 3.10944293e-05] index=2 prefix_certified=True
+numerically_certified_translation_quotient index= 1
+Warning: X does not support locale C.UTF-8
+SR_CERT_VERDICT numerically_certified_index1 verified=1

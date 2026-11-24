@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "parent_phi_sha256": "01f2c562d07d5dc767bc2b6428dcc62cc371c5bddcaa33b719790aeaf96ed90e",
+  "direction_sha256": "11d3e4b08e06937214489a8d5d3b01dabea7a76fdba100211d9b1f4829e273e9",
+  "negative_mode_verified": true,
+  "saddle_search_repeated": false,
+  "N": 128,
+  "L": 142.17225402106772,
+  "par": {
+    "tau": 0.05,
+    "gamma": 0.6,
+    "xi": 1.0,
+    "q0": 1.0
+  },
+  "endpoint_epsilon": 1e-05,
+  "dt": 1.0,
+  "force_tolerance": 1e-09,
+  "maxiter": 40000,
+  "source_run": "new_sr_gf_20261120",
+  "independent_audit": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/independent_audit.json",
+  "source_parent_file_sha256": "fff24606826cd86a5ad1b9bf5fe9142505e687cde6b7be72525189df90ea0803",
+  "files": [
+    {
+      "path": "plus/endpoint.mat",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2disorder_srhisd/plus/endpoint.mat",
+      "sha256": "c638f34200bd9a85610c7a76b5bed8ef2ca9d9db9903e7c961ffe8e52648f685"
+    },
+    {
+      "path": "plus/endpoint_summary.json",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2disorder_srhisd/plus/endpoint_summary.json",
+      "sha256": "19f8bc83e8f328a865c7de111a61612ac0774d5615de3481ef4f9466cb570ddd"
+    },
+    {
+      "path": "minus/endpoint.mat",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2disorder_srhisd/minus/endpoint.mat",
+      "sha256": "6fac479f8f554ace57fa2f6b3f6abbb4c9158ddc08a1168f96590ebd6b82fb34"
+    },
+    {
+      "path": "minus/endpoint_summary.json",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2disorder_srhisd/minus/endpoint_summary.json",
+      "sha256": "0e0c251714f8a58542b333a9b8328c8dd594e8ae2de9dbff0e7b076575f542af"
+    },
+    {
+      "path": "negative_mode.mat",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2disorder_srhisd/negative_mode.mat",
+      "sha256": "0012d0a7a9d0a9ba9bb470f6d6a520241ca47800867cf028757c6debe457bb2d"
+    },
+    {
+      "path": "validation.json",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2disorder_srhisd/validation.json",
+      "sha256": "7551916fd1ea350fc06d97d119745bf4c90a8a9787176665ecbd3f1e80e1794d"
+    }
+  ]
+}

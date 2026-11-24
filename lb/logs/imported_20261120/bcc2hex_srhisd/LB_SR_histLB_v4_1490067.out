@@ -1,0 +1,17 @@
+[INFO] job=1490067 host=c04.cluster-bicmr.com
+Warning: X does not support locale C.UTF-8
+MATLAB=9.14.0.2206163 (R2023a) maxNumCompThreads=1
+sr_current it=1 RMS=1.283444e+00 theta=+6.481895e-01 rank=0 refresh=0 HVP=2 FFT=22
+MATLAB=9.14.0.2206163 (R2023a) maxNumCompThreads=1
+sr_current it=1 RMS=1.283444e+00 theta=+6.481895e-01 rank=0 refresh=0 HVP=2 FFT=20
+SR FFT preflight PASS: relative state error 5.447e-16, projector error 1.619e-15
+PASS synthetic public preflight: FFT 23/7 and force 7 saved.
+HIST_INITIAL_PASS raw_seed_sha=fba9dda1b0e32ffc1fed762da760bd42965f66ef224b5b6b9a5ba93577507bb6 projected_overlap=0.999999962711114 removed_fraction=0.0002731
+MATLAB=9.14.0.2206163 (R2023a) maxNumCompThreads=4
+sr_current it=1 RMS=6.023188e-05 theta=+3.246294e-03 rank=0 refresh=0 HVP=2 FFT=22
+MATLAB=9.14.0.2206163 (R2023a) maxNumCompThreads=4
+sr_current it=1 RMS=6.023188e-05 theta=+3.246294e-03 rank=0 refresh=0 HVP=2 FFT=20
+SR FFT preflight PASS: relative state error 2.321e-15, projector error 7.887e-15
+HIST_SOLVER_ALIGNMENT_PASS projected_v_rms_difference=0
+[INFO] fixed_logical_cpu_binding=0,2,4,6
+{"status": "completed", "exit_code": 0, "process_wall_seconds": 11723.0409519393, "peak_child_rss_kib": 2523088}

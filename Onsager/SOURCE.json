@@ -1,0 +1,134 @@
+{
+  "task": "Onsager",
+  "article_result": "Figure 2",
+  "description": "Onsager orientational-density model on a 2,562-point sphere grid: the SR-HiSD pathway with physical indices 5 → 4 → 2 → 0.",
+  "origin": {
+    "note": "Source paths describe the original package layout; the task code and scientific data are included here.",
+    "numerical_sources": [
+      "functions/onsager/model",
+      "functions/onsager/methods",
+      "functions/onsager/infra"
+    ],
+    "input_sources": [
+      "data/onsager/input/grid.mat",
+      "data/onsager/input/seed.mat"
+    ],
+    "saved_calculation": "The complete 183,810-step calculation supplies the four states, stage records and integration histories."
+  },
+  "included_outputs": "results/paper",
+  "runtime_files": [
+    {
+      "path": "functions/onsager_analyze.m",
+      "sha256": "26a5c732e2637fd0ac1b3aa601c533cd619085f651fb6838c5d6d8b3c6fc0f33"
+    },
+    {
+      "path": "functions/onsager_canonical_signs.m",
+      "sha256": "e3e3357680bee7909002f0e8ce6e8b4af942e759279f0dd89931af46ee466c4b"
+    },
+    {
+      "path": "functions/onsager_check_paper_result.m",
+      "sha256": "74f4d8f1407c53a84719a6ac187faa5705af2db74e42a1a8f310cd826ac64ecf"
+    },
+    {
+      "path": "functions/onsager_constraint_basis.m",
+      "sha256": "28c7a87894abb70e45213d469c6d90ae682c78b64303baea3b17200b5cae7bb4"
+    },
+    {
+      "path": "functions/onsager_entropy_solve.m",
+      "sha256": "4e4927bafb888079d0ff1c25b28f0d1ddf5358ab5b721d648bd5dd7330dffd51"
+    },
+    {
+      "path": "functions/onsager_force.m",
+      "sha256": "bec5cef7bcecd854566342644905ca214a6c62a9c52747b5fb22dfc0d31595fa"
+    },
+    {
+      "path": "functions/onsager_hessian_action.m",
+      "sha256": "a15e74f6b88ecc9ff9cb877c5b9d9598738cc56378254609b2daae74e99b6c19"
+    },
+    {
+      "path": "functions/onsager_initialize.m",
+      "sha256": "693aaf2063dc1a78106f1e3f037027944934fcb5630ebbb4698d49275f1cfca9"
+    },
+    {
+      "path": "functions/onsager_lobpcg_frame.m",
+      "sha256": "fd0c228e7ffe1372aea4e6f8d9b1486265b54f6e624a30ff425c7ea63fcd4e0c"
+    },
+    {
+      "path": "functions/onsager_make_problem.m",
+      "sha256": "ce883e4c968796c6e9f8cfdad42fa7a33a0b57a238fbde2adbc5d18e9a4743ce"
+    },
+    {
+      "path": "functions/onsager_orthogonalize.m",
+      "sha256": "384dd2517fe775b817e3a27fc5d368fe75561694f24bc6a917eb92678927f7ba"
+    },
+    {
+      "path": "functions/onsager_project.m",
+      "sha256": "34d71c88f3a2b2d9a6e4d71f3c8188793d5f886c9b37298d21af525027f50dbd"
+    },
+    {
+      "path": "functions/onsager_rotation_matrix.m",
+      "sha256": "f32e5568212ebc550c8cdfbe00b1a41e85ff1fc866e93037a9c847c93b17cb2d"
+    },
+    {
+      "path": "functions/onsager_spherical_matrix.m",
+      "sha256": "1ae1b152b884b60b3741a3f17a1a1b53bcd938a8b6ece7489b7fe328f7673bf1"
+    },
+    {
+      "path": "functions/onsager_srhisd_advance.m",
+      "sha256": "18334117d2d95b8dd28f05afe2521692958a19d76d5cca15e74077c59dd11c55"
+    },
+    {
+      "path": "functions/onsager_verify_path.m",
+      "sha256": "a1f4140da2a078f7be23de542331411562b25cce93caaa4187c8b3a31dc85622"
+    },
+    {
+      "path": "functions/onsager_wnorm.m",
+      "sha256": "940185f808b9e067c5341b6bc386335bc192a70b5eebafbe06ecde0333a96268"
+    },
+    {
+      "path": "scripts/plot_figure2.m",
+      "sha256": "3c1b2501c81a82302f3f94d14b101e4084e8b01be411b3b0c67e28bc758afbe5"
+    },
+    {
+      "path": "scripts/search.m",
+      "sha256": "9d7e8a1a84aeae6bd62652df92e65946a43d97a2e24195e5a44268a12bce171a"
+    }
+  ],
+  "data_files": [
+    {
+      "path": "data/input/grid.mat",
+      "role": "Unit-sphere quadrature grid.",
+      "sha256": "6d959c686d4327172191a59449e88f562f49eab563ee8b859f051e0638b26429"
+    },
+    {
+      "path": "data/input/seed.mat",
+      "role": "Index-five initial orientational density.",
+      "sha256": "de17ace4fb8e623a99c4f6b54de0ed4ae76c26d94868b09d7a6ed0ed206db175"
+    },
+    {
+      "path": "data/reference/baseline.json",
+      "role": "Source and stored-result provenance.",
+      "sha256": "df66de430ea9f639e1f1a52b818271356295dac91e3f3bd7c475b3a51de9f512"
+    },
+    {
+      "path": "data/reference/figure2.pdf",
+      "role": "Stored figure of the saved numerical result.",
+      "sha256": "654a8f68a60e2b6da77f0d9bc058a0424b549a86c4a0a2c34a0b71a0c779ebf9"
+    },
+    {
+      "path": "data/reference/figure2.png",
+      "role": "Stored figure of the saved numerical result.",
+      "sha256": "79965eec1fef56bd53b3d81793e1462e366bd28c56ecc4bdd23013417558a42a"
+    },
+    {
+      "path": "data/reference/nodes.csv",
+      "role": "Physical indices, energies and residuals of the four states.",
+      "sha256": "13e1607d7024faa926ff7accad42c52b631b4b50a927944c51c8f1ffa476ea67"
+    },
+    {
+      "path": "data/reference/result.mat",
+      "role": "Saved pathway, states, stage settings and integration histories.",
+      "sha256": "5ba3f7770fcf4dd71db4b978610749511d10d0629cc3c37fbc1ae2734d25f395"
+    }
+  ]
+}

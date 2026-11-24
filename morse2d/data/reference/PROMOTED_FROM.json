@@ -1,0 +1,60 @@
+{
+  "source_run": "full_reproduction_20261120",
+  "source_mode": "compute",
+  "source_quick": false,
+  "source_solver_runs": 21000,
+  "paper_table_cells_verified": 42,
+  "role": "Current saved full-calculation outputs for loading and plotting; not a numerical comparison baseline.",
+  "files": [
+    {
+      "source": "results/full_reproduction_20261120/original_methods/result.mat",
+      "path": "data/reference/original_methods/result.mat",
+      "sha256": "e9ad204bcdac3164ca80e33f7a9431b09acf8b48751bba5d9c0610c8e2733be4"
+    },
+    {
+      "source": "results/full_reproduction_20261120/original_methods/trials.csv",
+      "path": "data/reference/original_methods/trials.csv",
+      "sha256": "eb7bc7401b16de4983c8d2bd52995c58ee048bc87c4d77a92c4b86a7b0f425db"
+    },
+    {
+      "source": "results/full_reproduction_20261120/original_methods/rates.csv",
+      "path": "data/reference/original_methods/rates.csv",
+      "sha256": "ea7d7429805958cf8af79bbd49fb0d6d41bc318df99c8df2d20a7bc448dbbfea"
+    },
+    {
+      "source": "results/full_reproduction_20261120/npss/result.mat",
+      "path": "data/reference/npss/result.mat",
+      "sha256": "8fa12c0724f86e963ede39a4e9c32b8f33e17342eb1437226f62746a9cdfdec9"
+    },
+    {
+      "source": "results/full_reproduction_20261120/npss/trials.csv",
+      "path": "data/reference/npss/trials.csv",
+      "sha256": "8013a6651cbda860f80a47cf730cc13154887b5f2ff0fe44a6a86a60b2be33b7"
+    },
+    {
+      "source": "results/full_reproduction_20261120/npss/rates.csv",
+      "path": "data/reference/npss/rates.csv",
+      "sha256": "f02b666e5c99cffc46c6e5bae844968f6eb85f964fbfd7fdde1ef525accef03f"
+    },
+    {
+      "source": "results/full_reproduction_20261120/plot_table1/result.mat",
+      "path": "data/reference/plot_table1/result.mat",
+      "sha256": "6ce801907c3f5e3bb5b0cf396e6f37326cced8f3531edae66c2c63d607bd3d5b"
+    },
+    {
+      "source": "results/full_reproduction_20261120/plot_table1/table1.csv",
+      "path": "data/reference/plot_table1/table1.csv",
+      "sha256": "fac58840d448d7c472a56ce04f1f89fc500f8ee78e8c221b10a95a1128a4d776"
+    },
+    {
+      "source": "results/full_reproduction_20261120/plot_table1/table1.png",
+      "path": "data/reference/plot_table1/table1.png",
+      "sha256": "195f3b439f8a999b2be591dd97dcad387196ca2b11d3a567c0f43e86c3fa4ff2"
+    },
+    {
+      "source": "results/full_reproduction_20261120/plot_table1/table1.pdf",
+      "path": "data/reference/plot_table1/table1.pdf",
+      "sha256": "ecc9a0bfff48cab19e9813ad1a2c94ea2fb9840d4e4f54cf050efb251dcbf10e"
+    }
+  ]
+}

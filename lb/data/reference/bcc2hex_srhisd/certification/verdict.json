@@ -1,0 +1,27 @@
+{
+  "verified_index1": true,
+  "status": "numerically_certified_index1",
+  "reasons": [],
+  "full_zero_band": 1e-07,
+  "full_index_by_start": [
+    1,
+    1
+  ],
+  "quotient_index_by_start": [
+    1,
+    1
+  ],
+  "force_rms": 9.998606837976913e-08,
+  "force_max": 5.807512200195486e-06,
+  "energy_density": -0.16603547499842142,
+  "source": "archived/bcc2hex/srhisd1_1490067/final.mat",
+  "independent_python_quotient_verified": true,
+  "phase_labels": [
+    "full_warm",
+    "full_cold",
+    "reduced_warm",
+    "reduced_cold"
+  ],
+  "rigorous_global_spectral_enclosure": false,
+  "scope": "Numerical raw mean-zero zero-band and current-translation quotient; not a global proof"
+}

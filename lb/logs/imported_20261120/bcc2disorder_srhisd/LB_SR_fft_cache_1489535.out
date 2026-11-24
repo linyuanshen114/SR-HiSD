@@ -1,0 +1,10 @@
+[INFO] SR FFT preflight and production job=1489535 host=c04.cluster-bicmr.com
+[INFO] preflight fixed_logical_cpu_binding=0,2,4,6 output=/bicmr/home/yslin114/LB/nphisd_lobpcg_si_20261028/experiments/sr_fft_cache_20261110/results/preflight_1489535
+Warning: X does not support locale C.UTF-8
+MATLAB=9.14.0.2206163 (R2023a) maxNumCompThreads=4
+sr_current it=1 RMS=1.194343e-04 theta=+2.380684e-03 rank=0 refresh=0 HVP=2 FFT=22
+MATLAB=9.14.0.2206163 (R2023a) maxNumCompThreads=4
+sr_current it=1 RMS=1.194343e-04 theta=+2.380684e-03 rank=0 refresh=0 HVP=2 FFT=20
+SR FFT preflight PASS: relative state error 5.562e-16, projector error 6.719e-15
+[INFO] fixed_logical_cpu_binding=0,2,4,6
+{"status": "completed", "exit_code": 0, "process_wall_seconds": 24367.475658919662, "peak_child_rss_kib": 2614124}

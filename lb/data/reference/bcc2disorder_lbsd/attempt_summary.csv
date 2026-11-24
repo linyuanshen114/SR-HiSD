@@ -1,0 +1,2 @@
+stage,source_morse,target_morse,sign,iterations,residual,energy,morse,valid,elapsed_seconds,lambda1,lambda2,lambda3,lambda4,solver_seconds
+up_4_lbsd,0,1,1,35696,9.9978480602715e-08,0.000249510915481715,1,1,94052.172445,-0.00865510722414146,-2.7617212982018e-06,2.93896370704998e-08,9.59677790716188e-06,92969.935113

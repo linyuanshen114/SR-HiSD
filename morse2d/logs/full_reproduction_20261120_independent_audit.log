@@ -1,0 +1,43 @@
+Independent audit completed N=5; checked=3500; disagreements=0
+Independent audit completed N=6; checked=7000; disagreements=0
+Independent audit completed N=7; checked=10500; disagreements=0
+Independent audit completed N=8; checked=14000; disagreements=0
+Independent audit completed N=9; checked=17500; disagreements=0
+Independent audit completed N=10; checked=21000; disagreements=0
+{
+  "status": "PASS",
+  "independent_method": "NumPy pair unit-vector derivatives/Hessian; SciPy SVD quotient; direct connectivity; proper-rotation alignment",
+  "checked": 21000,
+  "new_solver_runs": 21000,
+  "target_percentages": 42,
+  "matching_target_percentages": 42,
+  "independent_classification_disagreements": 0,
+  "original_reference_class_disagreements": 0,
+  "npss_reference_class_disagreements": 0,
+  "npss_reference_iteration_disagreements": 0,
+  "original_reference_iteration_delta_counts": {
+    "-1": 14994,
+    "0": 6
+  },
+  "maximum_rms_recomputation_error": 7.575848313769583e-15,
+  "maximum_gradient_norm_recomputation_error": 2.3956935846760477e-14,
+  "original_maximum_reference_energy_difference": 5.861977570020827e-14,
+  "original_maximum_reference_shape_difference": 2.0160375591160573e-09,
+  "npss_maximum_reference_energy_difference": 5.3290705182007514e-14,
+  "npss_maximum_reference_shape_difference": 0.0,
+  "initial_states_bitwise_equal": true,
+  "npss": {
+    "0.10": {
+      "trials": 3000,
+      "successes": 2799,
+      "mother_returns": 201,
+      "unconverged": 0
+    },
+    "0.01": {
+      "trials": 3000,
+      "successes": 2816,
+      "mother_returns": 184,
+      "unconverged": 0
+    }
+  }
+}

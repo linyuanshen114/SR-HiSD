@@ -1,0 +1,11 @@
+{
+  "parent_phi_sha256": "11cb5c9ff6e2e5164ac504b7de431770ba7c1fc19f680522ee009a94cc643c75",
+  "direction_sha256": "c98570cf9de689bc39555d3c1faa92dedb476da73a06d0b9397cd96993acac03",
+  "lambda": -0.028298192864231346,
+  "raw_residual_rms": 7.8149703197341567E-9,
+  "parent_force_rms": 9.9986068380210791E-8,
+  "parent_force_projection": -2.1235835711915762E-11,
+  "endpoint_epsilon": 1E-5,
+  "no_saddle_search_performed": true,
+  "threads": 4
+}

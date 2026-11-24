@@ -1,0 +1,4 @@
+scope,iterations,solver_seconds,diagnostic_seconds,wall_or_attempt_seconds
+upward_only,26987,56449.427268,14418.061355,70870.547266
+sequential_route,126706,119174.366065,57674.675296,176913.350436
+bilateral_gf,4271,875.927821,,892.737188

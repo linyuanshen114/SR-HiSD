@@ -1,0 +1,22 @@
+{
+  "history_checkpoint": "/bicmr/home/yslin114/LB/results_bcc_p3_legacyBB_pair_20261022/results_bcc_saddle_route_legacy_lbsd4_alignedv_blocktol1e8_dt024_bb020_200/tau_m030_gamma080/lbsd4_down/checkpoint_initial_search_sign_+1.mat",
+  "base_parent_input": "/bicmr/home/yslin114/LB/nphisd_lobpcg_si_20261028/releases/v7/results/paired_hex_128_warm_v7/bcc2hex/prepare/input.mat",
+  "description": "Raw historical fourth LBSD direction used as SR seed, then SR current-tangent projection",
+  "field_exact_equal": true,
+  "seed_exact_equal": true,
+  "phi_sha256": "2c7db1d7f74c2907c8f53219206731c6302fe55de865d84bf68ccffd5211c261",
+  "historical_v4_sha256": "fba9dda1b0e32ffc1fed762da760bd42965f66ef224b5b6b9a5ba93577507bb6",
+  "projected_v_sha256": "2db1e5e859266f168af76d2cce32eb142fcf589ba3da4e0402a3d6340083684c",
+  "seed_rms": 0.99999999999999989,
+  "seed_mean": 2.3361168685273603E-17,
+  "tangent_rank": 3,
+  "tangent_removed_fraction": 0.00027308930820813362,
+  "normalized_overlap_after_projection": 0.999999962711114,
+  "angle_radians": 0.00027308931216993667,
+  "bb_initial": 0.24,
+  "bb_min": 0.2,
+  "bb_max": 2,
+  "tolerance": 1E-7,
+  "solver_phi_exact_equal": true,
+  "solver_projected_v_rms_difference": 0
+}

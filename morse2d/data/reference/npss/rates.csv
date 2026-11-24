@@ -1,0 +1,13 @@
+method,N,trials,successes,success_pct,mother_returns,unconverged
+"NPSS, epsilon_lambda=0.10",5,500,449,89.8,51,0
+"NPSS, epsilon_lambda=0.10",6,500,456,91.2,44,0
+"NPSS, epsilon_lambda=0.10",7,500,412,82.4,88,0
+"NPSS, epsilon_lambda=0.10",8,500,499,99.8,1,0
+"NPSS, epsilon_lambda=0.10",9,500,490,98,10,0
+"NPSS, epsilon_lambda=0.10",10,500,493,98.6,7,0
+"NPSS, epsilon_lambda=0.01",5,500,453,90.6,47,0
+"NPSS, epsilon_lambda=0.01",6,500,460,92,40,0
+"NPSS, epsilon_lambda=0.01",7,500,421,84.2,79,0
+"NPSS, epsilon_lambda=0.01",8,500,499,99.8,1,0
+"NPSS, epsilon_lambda=0.01",9,500,490,98,10,0
+"NPSS, epsilon_lambda=0.01",10,500,493,98.6,7,0

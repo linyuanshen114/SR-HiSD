@@ -1,0 +1,12 @@
+NEW HEX SR GF parent=11cb5c9ff6e2e5164ac504b7de431770ba7c1fc19f680522ee009a94cc643c75 lambda=-0.0282981928642 eigres=7.814970e-09 force=9.998607e-08 Fv=-2.123584e-11
+START new HEX SR GF sign=+1
+srhisd1_gf-after0 it=2000  res=6.041e-09  E=-2.004061e-01
+GF CHECKPOINT srhisd1_gf sign+1 bounds=[2000,2000] RMS=6.001127e-09 E=-0.200406127621 seconds=161.5
+GF CHECKPOINT srhisd1_gf sign+1 bounds=[2000,4000] RMS=9.933903e-10 E=-0.200406127621 seconds=183.8
+FINISH new HEX SR GF sign=+1 phase=HEX RMS=9.933903e-10 bounds=[2000,4000] seconds=184.161
+START new HEX SR GF sign=-1
+srhisd1_gf-after0 it=2000  res=1.069e-09  E=-1.660356e-01
+GF CHECKPOINT srhisd1_gf sign-1 bounds=[2000,2000] RMS=1.065420e-09 E=-0.166035640129 seconds=170.3
+GF CHECKPOINT srhisd1_gf sign-1 bounds=[2000,4000] RMS=9.970432e-10 E=-0.166035640129 seconds=172.4
+FINISH new HEX SR GF sign=-1 phase=BCC RMS=9.970432e-10 bounds=[2000,4000] seconds=172.752
+NEW HEX SR bilateral GF COMPLETE.

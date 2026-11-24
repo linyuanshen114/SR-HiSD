@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.asv
+*.m~
+
+# Keep the supplied paper outputs; new experiment runs are local outputs.
+*/results/*
+!*/results/paper/
+!*/results/paper/**

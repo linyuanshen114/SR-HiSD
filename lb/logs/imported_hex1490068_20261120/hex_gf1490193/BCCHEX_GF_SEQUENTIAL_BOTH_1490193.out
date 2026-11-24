@@ -1,0 +1,46 @@
+job=1490193 host=c03.cluster-bicmr.com date=2026-11-19T22:47:39+08:00
+Cpus_allowed_list:	19,21,23,25,51,53,55,57
+SEQUENTIAL_SOURCE_SELECTOR_TEST_PASS
+SOURCE_GATE_PASS: down_2to1_kick_1000_sign_-1
+SEQUENTIAL_SOURCE_HASH_PASS
+Warning: X does not support locale C.UTF-8
+BILATERAL_GF_N8_PASS max5step_RMS_diff=0.000e+00
+BILATERAL_FAILOVER_PASS
+Warning: X does not support locale C.UTF-8
+SOURCE lambda=-0.0282964816869 rawres=6.633013e-12 force=9.964679e-08 force_projection=-2.895322e-10
+GF sign=+1 updates=0 force_RMS=3.003748e-07 force_max=3.713641e-05 energy=-0.166035475004 elapsed=0.28
+GF sign=+1 updates=200 force_RMS=1.937642e-04 force_max=4.044803e-02 energy=-0.16603572717 elapsed=39.69
+GF sign=+1 updates=400 force_RMS=1.677883e-02 force_max=2.883336e-01 energy=-0.195781738227 elapsed=80.49
+GF sign=+1 updates=600 force_RMS=6.861708e-05 force_max=3.503016e-04 energy=-0.200405877345 elapsed=124.60
+GF sign=+1 updates=800 force_RMS=1.796195e-05 force_max=8.365739e-05 energy=-0.200406110323 elapsed=170.66
+GF sign=+1 updates=1000 force_RMS=4.731401e-06 force_max=2.197327e-05 energy=-0.20040612642 elapsed=213.47
+GF sign=+1 updates=1200 force_RMS=1.246388e-06 force_max=5.780863e-06 energy=-0.200406127537 elapsed=253.40
+GF sign=+1 updates=1400 force_RMS=3.283423e-07 force_max=1.520712e-06 energy=-0.200406127615 elapsed=291.53
+GF sign=+1 updates=1600 force_RMS=8.649824e-08 force_max=4.000506e-07 energy=-0.20040612762 elapsed=334.19
+GF sign=+1 updates=1800 force_RMS=2.278730e-08 force_max=1.052952e-07 energy=-0.200406127621 elapsed=376.51
+GF sign=+1 updates=2000 force_RMS=6.003204e-09 force_max=2.771186e-08 energy=-0.200406127621 elapsed=418.35
+GF sign=+1 updates=2200 force_RMS=1.581566e-09 force_max=7.289289e-09 energy=-0.200406127621 elapsed=455.93
+GF_END sign=+1 status=force_converged n=2269 force=9.982633e-10 f=-0.200406127621 phase=HEX seconds=471.82
+GF sign=-1 updates=0 force_RMS=2.996614e-07 force_max=3.217364e-05 energy=-0.166035475004 elapsed=0.27
+GF sign=-1 updates=200 force_RMS=3.025064e-05 force_max=3.683208e-03 energy=-0.166035496135 elapsed=41.61
+GF sign=-1 updates=400 force_RMS=1.060886e-05 force_max=3.532201e-04 energy=-0.16603563625 elapsed=81.48
+GF sign=-1 updates=600 force_RMS=1.214448e-06 force_max=2.024664e-05 energy=-0.166035640071 elapsed=122.26
+GF sign=-1 updates=800 force_RMS=1.765994e-07 force_max=2.035605e-06 energy=-0.166035640128 elapsed=163.09
+GF sign=-1 updates=1000 force_RMS=3.765508e-08 force_max=2.565862e-07 energy=-0.166035640129 elapsed=201.71
+GF sign=-1 updates=1200 force_RMS=1.496804e-08 force_max=7.395933e-08 energy=-0.166035640129 elapsed=241.03
+GF sign=-1 updates=1400 force_RMS=7.414816e-09 force_max=3.919604e-08 energy=-0.166035640129 elapsed=279.35
+GF sign=-1 updates=1600 force_RMS=3.793356e-09 force_max=2.135822e-08 energy=-0.166035640129 elapsed=319.33
+GF sign=-1 updates=1800 force_RMS=1.951134e-09 force_max=1.134362e-08 energy=-0.166035640129 elapsed=361.16
+GF sign=-1 updates=2000 force_RMS=1.004839e-09 force_max=5.944433e-09 energy=-0.166035640129 elapsed=405.81
+GF_END sign=-1 status=force_converged n=2002 force=9.981956e-10 f=-0.166035640129 phase=BCC seconds=407.82
+
+ans = 
+
+  struct with fields:
+
+                    source: [1x1 struct]
+                  branches: [1x2 struct]
+                    status: 'both_force_converged_not_minimum_certified'
+              wall_seconds: 892.7372
+    np_model_counts_at_end: [1x1 struct]
+

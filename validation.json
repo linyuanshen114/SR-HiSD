@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "date": "2026-11-20",
+  "scope": "Submission inputs and saved-result figure generation",
+  "MATLAB_validation_release": "R2025b Update 2",
+  "original_LB_environment": "MATLAB R2023a; CPU-only shared dual Xeon Gold 6326 nodes; four physical cores, 16000 MB and four MATLAB threads per Slurm job",
+  "input_checks_passed": 12,
+  "saved_result_subtasks_passed": 12,
+  "figure_files": 49,
+  "Table1_and_Figures1_2_3_present": true,
+  "LB_saved_connections": 4,
+  "LB_nucleus_outlines": 4,
+  "compact_store_views": 5,
+  "compact_store_numeric_objects": 10,
+  "retained_numeric_objects_SHA_unchanged": true,
+  "compute_input_views_checked_after_compaction": true,
+  "runtime_and_data_fingerprints_checked": 228,
+  "full_searches_repeated_for_submission_cleanup": false,
+  "gradient_flows_repeated_for_submission_cleanup": false,
+  "included_results": {
+    "morse2d": "morse2d/results/paper",
+    "morse3d": "morse3d/results/paper",
+    "Onsager": "Onsager/results/paper",
+    "lb": "lb/results/paper"
+  },
+  "numerical_inputs_and_saved_states": "<task>/data",
+  "production_logs": "<task>/logs",
+  "original_timing_scopes_preserved": true
+}

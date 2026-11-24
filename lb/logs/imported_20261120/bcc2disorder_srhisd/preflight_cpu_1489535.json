@@ -1,0 +1,20 @@
+{
+  "allowed_logical_cpus": [
+    0,
+    2,
+    4,
+    6,
+    32,
+    34,
+    36,
+    38
+  ],
+  "selected_logical_cpus": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "distinct_physical_cores_selected": 4,
+  "requested_threads": 4
+}

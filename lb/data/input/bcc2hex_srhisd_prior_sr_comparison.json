@@ -1,0 +1,9 @@
+{
+  "prior_sr_snapshot": "/bicmr/home/yslin114/LB/nphisd_lobpcg_si_20261028/experiments/sr_fft_hex_20261112/results/bcc2hex/sr_fft/initial_actual.mat",
+  "new_sr_snapshot": "/bicmr/home/yslin114/LB/nphisd_lobpcg_si_20261028/experiments/sr_fft_hex_histlbsd_v4_20261117/results/bcc2hex/sr_fft/initial_actual.mat",
+  "phi_bitwise_equal": true,
+  "direction_bitwise_equal": false,
+  "direction_rms_difference": 1.5059435410139287e-16,
+  "direction_normalized_cosine": 1.0,
+  "description": "Both actual initialized SR directions, after current-tangent projection; numerical equality, not a bitwise identity."
+}

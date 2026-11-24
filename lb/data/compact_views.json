@@ -1,0 +1,930 @@
+{
+  "schema_version": 1,
+  "object_store": "data/arrays.h5",
+  "views": [
+    {
+      "path": "initial/bcc2hex/seed_common/checkpoint_common_bcc.mat",
+      "variables": {
+        "phi_bcc": {
+          "kind": "array",
+          "class": "double",
+          "shape": [
+            2097152,
+            1
+          ],
+          "sha256": "fae76bfbfb48356979e51be17f446cdce5a63e30ff8004f763719d115eedd737"
+        }
+      }
+    },
+    {
+      "path": "initial/bcc2disorder/kick_0020/lbsd4_to1/checkpoint_common_bcc.mat",
+      "variables": {
+        "N": {
+          "kind": "numeric",
+          "class": "double",
+          "shape": [
+            1,
+            1
+          ],
+          "data": [
+            128.0
+          ]
+        },
+        "L": {
+          "kind": "numeric",
+          "class": "double",
+          "shape": [
+            1,
+            1
+          ],
+          "data": [
+            142.17225402106772
+          ]
+        },
+        "par": {
+          "kind": "struct",
+          "fields": {
+            "gamma": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.6
+              ]
+            },
+            "q0": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            },
+            "tau": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.05
+              ]
+            },
+            "xi": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            }
+          }
+        },
+        "bb": {
+          "kind": "struct",
+          "fields": {
+            "betat": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                2.0
+              ]
+            },
+            "betau": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.2
+              ]
+            },
+            "dt": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.1
+              ]
+            },
+            "epsf": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1e-07
+              ]
+            },
+            "max_step": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.2
+              ]
+            },
+            "maxiter": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                80000.0
+              ]
+            },
+            "min_step": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.020000000000000004
+              ]
+            },
+            "outputp": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                100.0
+              ]
+            }
+          }
+        },
+        "kick": {
+          "kind": "numeric",
+          "class": "double",
+          "shape": [
+            1,
+            1
+          ],
+          "data": [
+            0.02
+          ]
+        },
+        "down_kick": {
+          "kind": "numeric",
+          "class": "double",
+          "shape": [
+            1,
+            1
+          ],
+          "data": [
+            0.005
+          ]
+        },
+        "phi_bcc": {
+          "kind": "array",
+          "class": "double",
+          "shape": [
+            2097152,
+            1
+          ],
+          "sha256": "c842821d25c34753972edc1394a86c48ae05d9014b937d97d1401542f29fa5f6"
+        },
+        "V_bcc_orig": {
+          "kind": "array",
+          "class": "double",
+          "shape": [
+            2097152,
+            4
+          ],
+          "sha256": "ed04ab00b2e276682dc49741195198d86e12b98b5995a594418e35e773349baa"
+        },
+        "V_bcc_tr": {
+          "kind": "array",
+          "class": "double",
+          "shape": [
+            2097152,
+            1
+          ],
+          "sha256": "f328b72728c506ed3e8651b1ddcc6b942cb132ef5def53bfd08176f45783e134"
+        }
+      }
+    },
+    {
+      "path": "initial/bcc2disorder/kick_0020/lbsd4_to1/checkpoint_initial_search_sign_+1.mat",
+      "variables": {
+        "phi_init": {
+          "kind": "array",
+          "class": "double",
+          "shape": [
+            2097152,
+            1
+          ],
+          "sha256": "ada1c1065df9b6e4836e32679f120d8285ce13ef94bb4312f8ac47fbfe49e500"
+        }
+      }
+    },
+    {
+      "path": "archived/bcc2disorder/kick_0020/lbsd4_to1/route_final.mat",
+      "variables": {
+        "N": {
+          "kind": "numeric",
+          "class": "double",
+          "shape": [
+            1,
+            1
+          ],
+          "data": [
+            128.0
+          ]
+        },
+        "L": {
+          "kind": "numeric",
+          "class": "double",
+          "shape": [
+            1,
+            1
+          ],
+          "data": [
+            142.17225402106772
+          ]
+        },
+        "par": {
+          "kind": "struct",
+          "fields": {
+            "gamma": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.6
+              ]
+            },
+            "q0": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            },
+            "tau": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.05
+              ]
+            },
+            "xi": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            }
+          }
+        },
+        "bb": {
+          "kind": "struct",
+          "fields": {
+            "betat": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                2.0
+              ]
+            },
+            "betau": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.2
+              ]
+            },
+            "dt": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.1
+              ]
+            },
+            "epsf": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1e-07
+              ]
+            },
+            "max_step": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.2
+              ]
+            },
+            "maxiter": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                80000.0
+              ]
+            },
+            "min_step": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.020000000000000004
+              ]
+            },
+            "outputp": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                100.0
+              ]
+            }
+          }
+        },
+        "kick": {
+          "kind": "numeric",
+          "class": "double",
+          "shape": [
+            1,
+            1
+          ],
+          "data": [
+            0.02
+          ]
+        },
+        "selected": {
+          "kind": "struct",
+          "fields": {
+            "V_check": {
+              "kind": "array",
+              "class": "double",
+              "shape": [
+                2097152,
+                1
+              ],
+              "sha256": "a121262b8c36f6444260063710f883fe118c51a5a84ea72a08f4c08d074864c3"
+            },
+            "elapsed_seconds": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                94052.172445
+              ]
+            },
+            "energy": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.00024951091548171484
+              ]
+            },
+            "iterations": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                35696.0
+              ]
+            },
+            "label": {
+              "kind": "char",
+              "data": "up_4_lbsd"
+            },
+            "lambda": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                10
+              ],
+              "data": [
+                -0.008655107224141458,
+                -2.761721298201805e-06,
+                2.9389637070499774e-08,
+                9.59677790716188e-06,
+                0.001738567018746796,
+                0.0017645352285411541,
+                0.001778530788093696,
+                0.0017885441296286199,
+                0.0018582469486138206,
+                0.0018735780220895922
+              ]
+            },
+            "morse": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            },
+            "phi": {
+              "kind": "array",
+              "class": "double",
+              "shape": [
+                2097152,
+                1
+              ],
+              "sha256": "48e067dcc282ebe0aeb0e91b499a7759896a5aec0f76a0215bc312834bcb0406"
+            },
+            "residual": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                9.997848060271497e-08
+              ]
+            },
+            "sign": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            },
+            "target_morse": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            },
+            "valid": {
+              "kind": "numeric",
+              "class": "logical",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            }
+          }
+        },
+        "phi_bcc": {
+          "kind": "array",
+          "class": "double",
+          "shape": [
+            2097152,
+            1
+          ],
+          "sha256": "c842821d25c34753972edc1394a86c48ae05d9014b937d97d1401542f29fa5f6"
+        },
+        "phi_plus": {
+          "kind": "array",
+          "class": "double",
+          "shape": [
+            2097152,
+            1
+          ],
+          "sha256": "d5467eeefe0bf1892fdad6b8fba29643832665f69fa0340f8ecb7419edeab74d"
+        },
+        "phi_minus": {
+          "kind": "array",
+          "class": "double",
+          "shape": [
+            2097152,
+            1
+          ],
+          "sha256": "1d20fb85b0abc7585db3d5437847ef512aecff67d95ef3b2e296c3138e0fa582"
+        },
+        "endpoint_plus": {
+          "kind": "struct",
+          "fields": {
+            "class": {
+              "kind": "char",
+              "data": "disorder"
+            },
+            "distance_bcc": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.34164821254443023
+              ]
+            },
+            "distance_disorder": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.9517453613848057e-08
+              ]
+            },
+            "energy": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                9.69581523864981e-18
+              ]
+            },
+            "is_bcc": {
+              "kind": "numeric",
+              "class": "logical",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.0
+              ]
+            },
+            "is_disorder": {
+              "kind": "numeric",
+              "class": "logical",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            },
+            "residual": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                9.939354576096966e-10
+              ]
+            }
+          }
+        },
+        "endpoint_minus": {
+          "kind": "struct",
+          "fields": {
+            "class": {
+              "kind": "char",
+              "data": "BCC"
+            },
+            "distance_bcc": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                3.6076529572839395e-05
+              ]
+            },
+            "distance_disorder": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.3416482164394814
+              ]
+            },
+            "energy": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.00024901361442167995
+              ]
+            },
+            "is_bcc": {
+              "kind": "numeric",
+              "class": "logical",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            },
+            "is_disorder": {
+              "kind": "numeric",
+              "class": "logical",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.0
+              ]
+            },
+            "residual": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                9.966798456851096e-10
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "reruns/new_hex_gf_20261024_231111_w2esf5aw/hex_phase_certification_20261025/reference_hex.mat",
+      "variables": {
+        "phi": {
+          "kind": "array",
+          "class": "double",
+          "shape": [
+            2097152,
+            1
+          ],
+          "sha256": "5b105acd1f42ba66c9e56a3f0fe6251f783360d852e8964741e97316a8305405"
+        },
+        "N": {
+          "kind": "numeric",
+          "class": "double",
+          "shape": [
+            1,
+            1
+          ],
+          "data": [
+            128.0
+          ]
+        },
+        "L": {
+          "kind": "numeric",
+          "class": "double",
+          "shape": [
+            1,
+            1
+          ],
+          "data": [
+            106.6291905158008
+          ]
+        },
+        "par": {
+          "kind": "struct",
+          "fields": {
+            "tau": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                -0.3
+              ]
+            },
+            "gamma": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                0.8
+              ]
+            },
+            "xi": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            },
+            "q0": {
+              "kind": "numeric",
+              "class": "double",
+              "shape": [
+                1,
+                1
+              ],
+              "data": [
+                1.0
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "objects": [
+    {
+      "sha256": "fae76bfbfb48356979e51be17f446cdce5a63e30ff8004f763719d115eedd737",
+      "elements": 2097152,
+      "bytes": 16777216,
+      "first_source": "initial/bcc2hex/seed_common/checkpoint_common_bcc.mat::phi_bcc",
+      "logical_references": 5,
+      "stored_bytes": 10560993
+    },
+    {
+      "sha256": "c842821d25c34753972edc1394a86c48ae05d9014b937d97d1401542f29fa5f6",
+      "elements": 2097152,
+      "bytes": 16777216,
+      "first_source": "initial/bcc2disorder/kick_0020/lbsd4_to1/checkpoint_common_bcc.mat::phi_bcc",
+      "logical_references": 18,
+      "stored_bytes": 9584758
+    },
+    {
+      "sha256": "ed04ab00b2e276682dc49741195198d86e12b98b5995a594418e35e773349baa",
+      "elements": 8388608,
+      "bytes": 67108864,
+      "first_source": "initial/bcc2disorder/kick_0020/lbsd4_to1/checkpoint_common_bcc.mat::V_bcc_orig[:,1:4]",
+      "logical_references": 6,
+      "stored_bytes": 54626179
+    },
+    {
+      "sha256": "f328b72728c506ed3e8651b1ddcc6b942cb132ef5def53bfd08176f45783e134",
+      "elements": 2097152,
+      "bytes": 16777216,
+      "first_source": "initial/bcc2disorder/kick_0020/lbsd4_to1/checkpoint_common_bcc.mat::V_bcc_tr[:,1]",
+      "logical_references": 6,
+      "stored_bytes": 14637003
+    },
+    {
+      "sha256": "ada1c1065df9b6e4836e32679f120d8285ce13ef94bb4312f8ac47fbfe49e500",
+      "elements": 2097152,
+      "bytes": 16777216,
+      "first_source": "initial/bcc2disorder/kick_0020/lbsd4_to1/checkpoint_initial_search_sign_+1.mat::phi_init",
+      "logical_references": 2,
+      "stored_bytes": 13451368
+    },
+    {
+      "sha256": "a121262b8c36f6444260063710f883fe118c51a5a84ea72a08f4c08d074864c3",
+      "elements": 2097152,
+      "bytes": 16777216,
+      "first_source": "archived/bcc2disorder/kick_0020/lbsd4_to1/candidate_up4_sign_+1.mat::c/V_check[:,1]",
+      "logical_references": 3,
+      "stored_bytes": 13952140
+    },
+    {
+      "sha256": "48e067dcc282ebe0aeb0e91b499a7759896a5aec0f76a0215bc312834bcb0406",
+      "elements": 2097152,
+      "bytes": 16777216,
+      "first_source": "archived/bcc2disorder/kick_0020/lbsd4_to1/candidate_up4_sign_+1.mat::c/phi",
+      "logical_references": 3,
+      "stored_bytes": 12703734
+    },
+    {
+      "sha256": "d5467eeefe0bf1892fdad6b8fba29643832665f69fa0340f8ecb7419edeab74d",
+      "elements": 2097152,
+      "bytes": 16777216,
+      "first_source": "archived/bcc2disorder/kick_0020/lbsd4_to1/route_final.mat::phi_plus",
+      "logical_references": 2,
+      "stored_bytes": 14615736
+    },
+    {
+      "sha256": "1d20fb85b0abc7585db3d5437847ef512aecff67d95ef3b2e296c3138e0fa582",
+      "elements": 2097152,
+      "bytes": 16777216,
+      "first_source": "archived/bcc2disorder/kick_0020/lbsd4_to1/route_final.mat::phi_minus",
+      "logical_references": 2,
+      "stored_bytes": 9413014
+    },
+    {
+      "sha256": "5b105acd1f42ba66c9e56a3f0fe6251f783360d852e8964741e97316a8305405",
+      "elements": 2097152,
+      "bytes": 16777216,
+      "first_source": "reruns/new_hex_gf_20261024_231111_w2esf5aw/hex_phase_certification_20261025/reference_hex.mat::phi",
+      "logical_references": 1,
+      "stored_bytes": 10482512
+    }
+  ],
+  "object_store_sha256": "157e0d556bf5270be3774fb919ccd2618388e39d4166984b6e545f1c66942d48",
+  "float64_preserved": true,
+  "lossy_compression": false,
+  "history_removed": true,
+  "initial_V_columns": {
+    "original": 4,
+    "translation_reduced": 1
+  },
+  "historical_full_warm_blocks_preserved": false,
+  "checkpoint_snapshots_included": false,
+  "release_pruning": {
+    "unused_views_removed": true,
+    "unused_variables_removed": true,
+    "numeric_objects_unchanged": true,
+    "original_view_count": 78,
+    "retained_view_count": 5,
+    "original_object_count": 64,
+    "retained_object_count": 10
+  }
+}

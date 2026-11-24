@@ -1,0 +1,798 @@
+{
+  "task": "lb",
+  "article_result": "Figure 3",
+  "description": "Landau-Brazovskii original-space LBSD and translation-reduced SR-HiSD.",
+  "origin": {
+    "package": "bcc_hex_disorder_four_cases_20261120",
+    "kernels": [
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/lb_cam3d/initialize_cam.m",
+        "local": "functions/lb_initialize.m",
+        "adaptation": "Function names and local interfaces adapted; source mathematical statements retained."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/lb_cam3d/hv_camnew.m",
+        "local": "functions/lb_hessian_action.m",
+        "adaptation": "Function names and local interfaces adapted; source mathematical statements retained."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/lb_cam3d/precond_camnew.m",
+        "local": "functions/lb_precondition.m",
+        "adaptation": "Function names and local interfaces adapted; source mathematical statements retained."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/lb_cam3d/gradientflow.m",
+        "local": "functions/lb_gradient_flow.m",
+        "adaptation": "Function names and local interfaces adapted; source mathematical statements retained."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/lb_cam3d/hiosdoptions.m",
+        "local": "functions/lb_solver_options.m",
+        "adaptation": "Function names and local interfaces adapted; source mathematical statements retained."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/lb_cam3d/trhiosd_lobpcg_iniP_eh.m",
+        "local": "functions/lb_reduced_ritz.m",
+        "adaptation": "Function names and local interfaces adapted; source mathematical statements retained."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/lb_cam3d/triniteigs.m",
+        "local": "functions/lb_reduced_eigenpairs.m",
+        "adaptation": "Function names and local interfaces adapted; source mathematical statements retained."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/bcc_align_initial_directions.m",
+        "local": "functions/lb_align_initial_frame.m",
+        "adaptation": "Function names and local interfaces adapted; source mathematical statements retained."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/lb_cam3d/hiosd_lobpcg_sieh.m",
+        "local": "functions/lb_lbsd.m"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2disorder/frozen_lbsd/lb_cam3d/hiosd_lobpcg_sieh.m",
+        "local": "functions/lb_lbsd.m"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/lb_cam3d/hiosd_lobpcg_iniP_eh.m",
+        "local": "functions/lb_full_ritz.m"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/lb_cam3d/initeigs.m",
+        "local": "functions/lb_full_eigenpairs.m"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex_sr1490067/matlab/np_spectrum.m",
+        "local": "functions/lb_raw_spectrum.m",
+        "adaptation": "Default reference_generalized_gram path retained; model callbacks renamed; unsupported shared branch removed."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex_sr1490067/matlab/nplb_lobpcg_step.m",
+        "local": "functions/lb_spectrum_lobpcg_step.m",
+        "adaptation": "Function/error prefix and comments renamed; mathematical statements retained."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex/snapshot/benchmark_bcc_saddle_routes.m#verify_lbsd_candidate,rms_res",
+        "local": "functions/lb_candidate.m",
+        "adaptation": "Use exact staged RMS summation and expose raw full-H eigenpair residuals/zero counts/finite-spectrum status. Route acceptance remains explicit in scripts."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex_gf/run_hex_gf.m",
+        "local": "functions/lb_flow_with_checkpoints.m",
+        "adaptation": "Fresh-only chunk loop with numerical updates delegated to lb_gradient_flow; conservative final-chunk bounds, exact parent/direction hashes, atomic checkpoints. No runtime dependency on staging and no resume claim."
+      },
+      {
+        "source_hex": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex_sr1490067/matlab/np_shared_lobpcg_step.m",
+        "source_disorder": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2disorder_sr32410/engine/matlab/np_shared_lobpcg_step.m",
+        "local": "functions/lb_sr_lobpcg_step.m"
+      },
+      {
+        "source_hex": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex_sr1490067/matlab/np_project.m",
+        "source_disorder": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2disorder_sr32410/engine/matlab/np_project.m",
+        "local": "functions/lb_sr_project.m"
+      },
+      {
+        "source_hex": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex_sr1490067/matlab/np_orth.m",
+        "source_disorder": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2disorder_sr32410/engine/matlab/np_orth.m",
+        "local": "functions/lb_sr_orth.m"
+      },
+      {
+        "source_hex": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex_sr1490067/source/lb_cam3d/ngrad_camnew.m",
+        "source_disorder": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2disorder_sr32410/engine/source/lb_cam3d/ngrad_camnew.m",
+        "local": "functions/lb_negative_gradient.m"
+      },
+      {
+        "source_hex": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex_sr1490067/source/lb_cam3d/ene_cammew.m",
+        "source_disorder": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2disorder_sr32410/engine/source/lb_cam3d/ene_cammew.m",
+        "local": "functions/lb_energy.m"
+      },
+      {
+        "source_hex": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex_sr1490067/source/lb_cam3d/make_trans_orbit_projector.m",
+        "source_disorder": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2disorder_sr32410/engine/source/lb_cam3d/make_trans_orbit_projector.m",
+        "local": "functions/lb_translation_projector.m"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/engine/bcc2hex_sr1490067/matlab/np_solve.m",
+        "local": "functions/lb_srhisd.m",
+        "adaptation": "Retains SR-only branch arithmetic and operation counting; caller owns checkpoint I/O; inactive NPSS/refresher machinery omitted."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120_staging/matlab/lb_repro_postprocess.m",
+        "local": "functions/lb_hex_identity.m",
+        "adaptation": "Pure same-field HEX geometry, proper cubic orientation and independent-reference spectral phase alignment; no input field modification."
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120/engine/bcc2hex_lbsd1490068/code/run_historical_route.m",
+        "local": "scripts/bcc2hex.m",
+        "adaptation": "HEX LBSD section: exact saved entrance; source solve, original-HVP gates and kick policy. Only exact 4->3->2->1 stages are accepted; direct route and index-5 recovery are excluded.",
+        "applies_to": "bcc2hex_lbsd1490068"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120/engine/bcc2hex_lbsd1490068/code/certify_original_index.m",
+        "local": "functions/lb_original_index_gate.m",
+        "adaptation": "Same normal-path mathematical statements; local raw-spectrum callbacks; optional bounded Quick checks.",
+        "applies_to": "bcc2hex_lbsd1490068"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120/engine/bcc2hex_lbsd1490068/code/classify_zero_band.m",
+        "local": "functions/lb_classify_zero_band.m",
+        "adaptation": "Function renamed; mathematical statements retained.",
+        "applies_to": "bcc2hex_lbsd1490068"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120/engine/bcc2hex_lbsd1490068/code/kick_can_increase.m",
+        "local": "functions/lb_kick_can_increase.m",
+        "adaptation": "Function renamed; mathematical statements retained.",
+        "applies_to": "bcc2hex_lbsd1490068"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120/engine/bcc2hex_lbsd1490068/code/next_lbsd_k.m",
+        "local": "functions/lb_next_lbsd_k.m",
+        "adaptation": "Function renamed; mathematical statements retained.",
+        "applies_to": "bcc2hex_lbsd1490068"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120/engine/bcc2hex_lbsd1490068/code/run_historical_route.m",
+        "local": "functions/lb_original_candidate.m",
+        "adaptation": "Force/energy and warm/cold original-HVP gate from run_attempt; acceptance limited to the requested exact sequential target.",
+        "applies_to": "bcc2hex_lbsd1490068"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120/engine/bcc2hex_lbsd1490068/code/lb_cam3d/hiosd_lobpcg_sieh.m",
+        "local": "functions/lb_lbsd.m",
+        "adaptation": "Function renamed; mathematical statements retained; shared kernel remains unchanged.",
+        "applies_to": "bcc2hex_lbsd1490068"
+      },
+      {
+        "source": "bcc_hex_disorder_four_cases_20261120/engine/bcc2hex_bilateral1490193/code/run_lbsd_bilateral.m",
+        "local": "functions/lb_hex_flow_with_checkpoints.m",
+        "adaptation": "Preserve run_one position arithmetic, n=0:maxiter stop order and per-step history; local model functions and atomic checkpoints; exact update counts. Parent phase audits remain in the task script.",
+        "applies_to": "bcc2hex_lbsd1490068"
+      }
+    ]
+  },
+  "active_cases": [
+    {
+      "id": "bcc2hex_lbsd",
+      "method": "LBSD",
+      "implementation": "hex1490068_exact_historical_V_original_space",
+      "stage_sequence": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "direct_4_to_1": false,
+      "kick": 0.01,
+      "dt": 0.24,
+      "bb_bounds": [
+        0.2,
+        2.0
+      ],
+      "input": "data/input/bcc2hex_lbsd.mat",
+      "input_sha256": "61e0c3ee6f1286ab9fdfb5bb8ad7255c4347ac556ec99515fd6d730d0a69cc80",
+      "source_job": "1490068",
+      "bilateral_job": "1490193",
+      "original_solver_frame_passed_unchanged": true,
+      "downward_kick_schedule": [
+        0.001,
+        0.002,
+        0.004
+      ],
+      "numerical_zero_band": 1e-07,
+      "index_gate": "two_start_original_mean_zero_HVP_k12",
+      "historical_upward_iterations": 26987,
+      "historical_upward_solver_seconds": 56449.427268,
+      "historical_upward_diagnostic_seconds": 14418.061355,
+      "historical_sequential_iterations_including_failed_branch": 126706
+    },
+    {
+      "id": "bcc2hex_srhisd",
+      "method": "SR-HiSD",
+      "implementation": "sr1490067_fft_cache",
+      "kick": 0.01,
+      "dt": 0.24,
+      "bb_bounds": [
+        0.2,
+        2.0
+      ],
+      "input": "data/input/bcc2hex_srhisd.mat"
+    },
+    {
+      "id": "bcc2disorder_lbsd",
+      "method": "LBSD",
+      "implementation": "frozen_native_blocktol_1e8",
+      "kick": 0.02,
+      "dt": 0.1,
+      "bb_bounds": [
+        0.02,
+        0.2
+      ]
+    },
+    {
+      "id": "bcc2disorder_srhisd",
+      "method": "SR-HiSD",
+      "implementation": "sr32410_fft_cache",
+      "kick": 0.02,
+      "dt": 0.1,
+      "bb_bounds": [
+        0.02,
+        0.2
+      ],
+      "input": "data/input/bcc2disorder_srhisd.mat"
+    }
+  ],
+  "included_outputs": "results/paper",
+  "recorded_timings": "logs/timing.csv",
+  "hex_sequential_and_GF_timings": "logs/imported_hex1490068_20261120/timing.csv",
+  "saved_reference": "data/reference",
+  "storage_manifest": "data/store_manifest.json",
+  "runtime_files": [
+    {
+      "path": "functions/lb_align_initial_frame.m",
+      "sha256": "4fbb8ac0b40255a9c19a134fdd0be046f83c2f68af371b30c909b362b4fe313c"
+    },
+    {
+      "path": "functions/lb_branch_info.m",
+      "sha256": "9fa4b512f75f3a922462cf4897dab531e976c31967e1a9b433b6af37f1088603"
+    },
+    {
+      "path": "functions/lb_candidate.m",
+      "sha256": "22c2a47dcc97b426fc68777c866483e0ead7ed64b4767910949f8f2487c83ab7"
+    },
+    {
+      "path": "functions/lb_choose_candidate.m",
+      "sha256": "bd62eba77f5f9ce24054feb0d7c1df06d113aaa7d9af1f6878200fbe1e85a822"
+    },
+    {
+      "path": "functions/lb_classify_zero_band.m",
+      "sha256": "67d581eeba88414a85936cce08aae032adc65886e052d69129cfa8d9a4feca8e"
+    },
+    {
+      "path": "functions/lb_demo_initial.m",
+      "sha256": "206b9538071c7f49b55bfb6f48a50cff5035aefddd185c42dc68b80c8cdb0343"
+    },
+    {
+      "path": "functions/lb_energy.m",
+      "sha256": "4d83851631e794ca4ac10c8bb22a92d01f8847f40cc1d264a9b1681684c50b9a"
+    },
+    {
+      "path": "functions/lb_find_result.m",
+      "sha256": "ac7bd431e107698bf737fde02e5cdc51bb8a63100c27e2de1218904cf3a02d66"
+    },
+    {
+      "path": "functions/lb_flow_with_checkpoints.m",
+      "sha256": "c6f0911f5d016c8e24a89cbb8667dd98697a678e35bada04feb449283d089459"
+    },
+    {
+      "path": "functions/lb_full_eigenpairs.m",
+      "sha256": "ed821aad1e295741054d34339c46e76c7eabc8e4d37e0360f0f891345d3d22ed"
+    },
+    {
+      "path": "functions/lb_full_ritz.m",
+      "sha256": "e4f653b3a6cde306853ce50200a369f126839d08f6a47d49b3ad80ac0c239816"
+    },
+    {
+      "path": "functions/lb_gradient_flow.m",
+      "sha256": "2dc0d223640c0c6e2c4e7d6596a61c1bc7c24f5740a872e2ebc6914c8f5b6f90"
+    },
+    {
+      "path": "functions/lb_hessian_action.m",
+      "sha256": "caee480f98139937ae54e668d4e8c50722e7d68d03d3c849352dec50fb99598a"
+    },
+    {
+      "path": "functions/lb_hex_flow_with_checkpoints.m",
+      "sha256": "063179b4e55352499bb8f9a329a979d40346973874a23b08f845d3b6b98d0b2d"
+    },
+    {
+      "path": "functions/lb_hex_identity.m",
+      "sha256": "34684b25ac15bfa5595f6cc0ccbdd4bbfd0ed2f67d6116392c6792f2e5cc52c6"
+    },
+    {
+      "path": "functions/lb_initialize.m",
+      "sha256": "f92cbdb0f7194b30963417db30ab14a927cd23572c1658cabe3e784abc66afca"
+    },
+    {
+      "path": "functions/lb_input_routes.m",
+      "sha256": "99e68cba73c1df872851830ebba518992eb6fd1131788065b4d1754bb6994ca7"
+    },
+    {
+      "path": "functions/lb_kick_can_increase.m",
+      "sha256": "821882ca3d74aef648f0916606bd1191f854a937b99d6243f8726be5de0ea68f"
+    },
+    {
+      "path": "functions/lb_lbsd.m",
+      "sha256": "aadefec05fd6a65d93c7c31388418c45a9c2855be3a83c1bdb6f575b4f6eef4e"
+    },
+    {
+      "path": "functions/lb_make_route.m",
+      "sha256": "2320b1dccc969c911b032b17ec65a59e124a150c2d76f6365b27ec16f45113a1"
+    },
+    {
+      "path": "functions/lb_negative_gradient.m",
+      "sha256": "b08d97be87bbcea2dd8111d946f9c6571d7743de1ff7cab8ec62cd9b0698d5a8"
+    },
+    {
+      "path": "functions/lb_next_lbsd_k.m",
+      "sha256": "d32f05fd02db18b6335ff47995868ee14cc3b68afb3bab9c9aaafbd3404cc137"
+    },
+    {
+      "path": "functions/lb_normalize_rms.m",
+      "sha256": "6ba1eb22fedb8df7c7910873d143e469798f94d179769ac38d44a074a8a912ef"
+    },
+    {
+      "path": "functions/lb_nucleus_measure.m",
+      "sha256": "fb85c06887531ce899bf2033b1101927c52b8c250f965619736044f8b529dfc8"
+    },
+    {
+      "path": "functions/lb_numeric_sha.m",
+      "sha256": "527fdbe87c9dfeff4871b12319bd30a473791a5ef69aef28084587b7c13e7880"
+    },
+    {
+      "path": "functions/lb_oblique_slice.m",
+      "sha256": "7d9d56173f5f2d5033b456c59f11697bbe15239be0083a611a33b405deab3f2d"
+    },
+    {
+      "path": "functions/lb_options.m",
+      "sha256": "336f9d7f013fab27d77159a45a48a72912d845ba739e808d5c516e5b73a62d86"
+    },
+    {
+      "path": "functions/lb_original_candidate.m",
+      "sha256": "5748a8a76b8c08209f75f39bfd6eefabf93b21f2c1ee7791e2fad3ca98b25fcd"
+    },
+    {
+      "path": "functions/lb_original_index_gate.m",
+      "sha256": "9665e78b12818e135e7a1d96f8e5aab32a127db4633419d15c06085914240bcd"
+    },
+    {
+      "path": "functions/lb_panel_position.m",
+      "sha256": "26f5ee8502b5d620bfe160c45209e78807e5bf0097449d1e954af62affe1880d"
+    },
+    {
+      "path": "functions/lb_plot_case_routes.m",
+      "sha256": "b29daf5636ec91549051683a61160ee760856f1019c64483ecd08d84e918123c"
+    },
+    {
+      "path": "functions/lb_plot_style.m",
+      "sha256": "a6d7b5614fe0f544a26c9d7269cc499c64b936826027763849a47fc148f75921"
+    },
+    {
+      "path": "functions/lb_precondition.m",
+      "sha256": "124fe49fd569a39445e869e88e4cf095f74cf64b2031531ce8e456cf87bd9ee9"
+    },
+    {
+      "path": "functions/lb_raw_spectrum.m",
+      "sha256": "b4250a6d959b730ead4e524d471533ec81780fd776b22b1113834b13232efde8"
+    },
+    {
+      "path": "functions/lb_read_view.m",
+      "sha256": "b062ec17dea4106d93fe1be7e548da81f434c5694a48b3e7a59eb7bf1454db95"
+    },
+    {
+      "path": "functions/lb_reduced_eigenpairs.m",
+      "sha256": "72ab52c78f86d59ca1f88f4ee82abbfdb57c47055c90dc47b53be37a53f1c6a0"
+    },
+    {
+      "path": "functions/lb_reduced_ritz.m",
+      "sha256": "042770dbc6340500e3d5d99461809fb26c6a08209428dcb45941fb0e340f15fb"
+    },
+    {
+      "path": "functions/lb_reference_hex_lbsd.m",
+      "sha256": "8a6bbb4f9c0d3e9e65eb90fa6e24391fd384873d067da4222a6cef211e966bdb"
+    },
+    {
+      "path": "functions/lb_reference_routes.m",
+      "sha256": "2b599fb7bb1bd28d52c0363ee122f14e0b28f359b0b3e390031851918db8e9cb"
+    },
+    {
+      "path": "functions/lb_solver_options.m",
+      "sha256": "97e20971bd73c02acf510c57799c5ea830f6343f14a37256bc122cb52d809579"
+    },
+    {
+      "path": "functions/lb_spectrum_lobpcg_step.m",
+      "sha256": "19223eba759aef5a20a53d09f9e63257c86832c643f0748268ed3736ad81b96e"
+    },
+    {
+      "path": "functions/lb_sr_lobpcg_step.m",
+      "sha256": "5ea2822b667f4087b710fc13e03b324a6a4be934eee76d15474fdbfbff495c5a"
+    },
+    {
+      "path": "functions/lb_sr_orth.m",
+      "sha256": "f522a739d524a81a9caeb3b858677917ddcddeed4619ec96fc2329c5db1d211c"
+    },
+    {
+      "path": "functions/lb_sr_project.m",
+      "sha256": "69a30406fe0d6a61e3b3cddae88e7044b8255f36528e60871c24965fbcb58c77"
+    },
+    {
+      "path": "functions/lb_srhisd.m",
+      "sha256": "adc2f1f9367c4437a55524732883250670e71b0cdd3e81404a579892133cbc4c"
+    },
+    {
+      "path": "functions/lb_translation_projector.m",
+      "sha256": "ff936d14297b50d00dcc88dadf27e05daecc80a7fb2f33e2fe6067c32bb3c460"
+    },
+    {
+      "path": "functions/lb_trial_record.m",
+      "sha256": "4f201897b4e263db1ad719571fa77d35b2f9649830ecc42c5738580bc664f106"
+    },
+    {
+      "path": "functions/lb_write_solver_checkpoint.m",
+      "sha256": "2c546e10a7956913369b57fd0bd028dd881efec4af358009ff66e8e11f9e3148"
+    },
+    {
+      "path": "functions/lb_write_stage.m",
+      "sha256": "7f55ac4d35783124bc4d397928f99c590dc7fe109c90dfa9d5f470ef5c88a9e4"
+    },
+    {
+      "path": "scripts/bcc2disorder.m",
+      "sha256": "b48ba138e3f81c243a8228be0e275e83a018224b66228836962fb69ff4a6107b"
+    },
+    {
+      "path": "scripts/bcc2hex.m",
+      "sha256": "e58f66fb37ba081d29457dbea74f267c2aa0b9de7632969ae3d7074d060c5731"
+    },
+    {
+      "path": "scripts/nuclei.m",
+      "sha256": "7aa8f888286def8b2eac2f592806ca270f1dace847f8c808b6dadc607739fe64"
+    },
+    {
+      "path": "scripts/plot_figure3.m",
+      "sha256": "2bbec5343755a731d9f3315d9a40f2c1a0709720bd6efa72c69baff74fe38901"
+    }
+  ],
+  "data_files": [
+    {
+      "path": "data/arrays.h5",
+      "sha256": "157e0d556bf5270be3774fb919ccd2618388e39d4166984b6e545f1c66942d48"
+    },
+    {
+      "path": "data/compact_views.json",
+      "sha256": "6e7d6df919fd800f96ba4fbacf5a86fd187ff75416b6a5a940c87bb60d644b0c"
+    },
+    {
+      "path": "data/input/bcc2disorder_srhisd.json",
+      "sha256": "28e48d9d78a2820f710cbb99396eb05906212193e0e30150b2567fcbeaac7119"
+    },
+    {
+      "path": "data/input/bcc2disorder_srhisd.mat",
+      "sha256": "8ff45670553455e54a9f117823aef9633de170932e40eb4cb961e7c4c62270f0"
+    },
+    {
+      "path": "data/input/bcc2hex_lbsd.mat",
+      "sha256": "61e0c3ee6f1286ab9fdfb5bb8ad7255c4347ac556ec99515fd6d730d0a69cc80"
+    },
+    {
+      "path": "data/input/bcc2hex_lbsd_reference.mat",
+      "sha256": "b87f0d47a2b0875e5d4f1efbba7a548fe5513826c9241dbdcc6661a93e18916a"
+    },
+    {
+      "path": "data/input/bcc2hex_srhisd.json",
+      "sha256": "d567d1c76e750d82e08352fef4287da4e70d1c35f5bb0f06a9d19069bb3e481f"
+    },
+    {
+      "path": "data/input/bcc2hex_srhisd.mat",
+      "sha256": "0b73346030c2a09fb68eceeb7eafee359e25b6df4ba4b676c95c26212e7917b2"
+    },
+    {
+      "path": "data/input/bcc2hex_srhisd_initial_audit.json",
+      "sha256": "eba18e385d558ae9dd32436d0a1560ae83fc479a8e4f62e5c175e7d8b3323d78"
+    },
+    {
+      "path": "data/input/bcc2hex_srhisd_prior_sr_comparison.json",
+      "sha256": "46ddfad7cf14f9540dbbb5da0a2dafa7190deea20542af6872efa269458e2bee"
+    },
+    {
+      "path": "data/input/bcc2hex_srhisd_solver_initial_audit.json",
+      "sha256": "1601bb0cf9d3938723c95055b1664adad907bb6515b36d1d58f151dc8cb2f06b"
+    },
+    {
+      "path": "data/reference/bcc2disorder_lbsd/attempt_summary.csv",
+      "sha256": "889d99a84439d5a7f0be5b4ade94913a51b6f7fa7d6e7f99aae68e71d8540d55"
+    },
+    {
+      "path": "data/reference/bcc2disorder_lbsd/certification/certificate.json",
+      "sha256": "5fe52d70db884f926c4838d79ae2a0d2466de6774ccb5c086cbe6d0a63520ad9"
+    },
+    {
+      "path": "data/reference/bcc2disorder_lbsd/certification/full_cold.json",
+      "sha256": "804d70b5ce53692049cabca01f36de8c32a5879eb0bed15f69d0460dd2dea066"
+    },
+    {
+      "path": "data/reference/bcc2disorder_lbsd/certification/full_warm.json",
+      "sha256": "7496333ca4fd95c2c30f0cd2c7847fa0731f73825be6e456d88b6a2b66e2c6e1"
+    },
+    {
+      "path": "data/reference/bcc2disorder_lbsd/certification/manifest.json",
+      "sha256": "2b357f7bfd21cccd0e66b7618b4ce05b95e750531d4f898f14b110159913a5da"
+    },
+    {
+      "path": "data/reference/bcc2disorder_lbsd/certification/reduced_cold.json",
+      "sha256": "a078c85f3658f624058923835879fcc4c2a16ede805adb217a92d627f562a7c8"
+    },
+    {
+      "path": "data/reference/bcc2disorder_lbsd/certification/reduced_warm.json",
+      "sha256": "724a51069cfb4a2e2c5a0a5c6e9c957bba84bf2b9d9f3bb4ca59a46ee07994ac"
+    },
+    {
+      "path": "data/reference/bcc2disorder_lbsd/route_summary.csv",
+      "sha256": "310edd71d194046b78f53673e3736e3e97a6e4b64ee4efa0f0d66b0256233547"
+    },
+    {
+      "path": "data/reference/bcc2disorder_srhisd/events.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/reference/bcc2disorder_srhisd/final.mat",
+      "sha256": "fff24606826cd86a5ad1b9bf5fe9142505e687cde6b7be72525189df90ea0803"
+    },
+    {
+      "path": "data/reference/bcc2disorder_srhisd/gf/completion.json",
+      "sha256": "4d218763072a6cfb191121845ea8dd87863a230f18f30fa796574fd4241c0010"
+    },
+    {
+      "path": "data/reference/bcc2disorder_srhisd/gf/minus/endpoint.mat",
+      "sha256": "6fac479f8f554ace57fa2f6b3f6abbb4c9158ddc08a1168f96590ebd6b82fb34"
+    },
+    {
+      "path": "data/reference/bcc2disorder_srhisd/gf/minus/endpoint_summary.json",
+      "sha256": "0e0c251714f8a58542b333a9b8328c8dd594e8ae2de9dbff0e7b076575f542af"
+    },
+    {
+      "path": "data/reference/bcc2disorder_srhisd/gf/negative_mode.mat",
+      "sha256": "0012d0a7a9d0a9ba9bb470f6d6a520241ca47800867cf028757c6debe457bb2d"
+    },
+    {
+      "path": "data/reference/bcc2disorder_srhisd/gf/plus/endpoint.mat",
+      "sha256": "c638f34200bd9a85610c7a76b5bed8ef2ca9d9db9903e7c961ffe8e52648f685"
+    },
+    {
+      "path": "data/reference/bcc2disorder_srhisd/gf/plus/endpoint_summary.json",
+      "sha256": "19f8bc83e8f328a865c7de111a61612ac0774d5615de3481ef4f9466cb570ddd"
+    },
+    {
+      "path": "data/reference/bcc2disorder_srhisd/gf/validation.json",
+      "sha256": "7551916fd1ea350fc06d97d119745bf4c90a8a9787176665ecbd3f1e80e1794d"
+    },
+    {
+      "path": "data/reference/bcc2disorder_srhisd/metadata.json",
+      "sha256": "9f463eba64f6889aabca6aab58901ce530a3ebdba0db2188e864cf92837d2e09"
+    },
+    {
+      "path": "data/reference/bcc2disorder_srhisd/summary.json",
+      "sha256": "3354901218cffff32c26f7ad26b017c1bece638010269967f1234a1f4f04afd9"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/result.mat",
+      "sha256": "f66e41656b8eef30745e5cf0bd2c9f773ac555159a901e2d2ef96f2a7f266152"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/sign_+1/endpoint.json",
+      "sha256": "0767f142670204aeb2a54ac9e8feaaf7759a4a8f3f07f6a0a575d6677477ec19"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/sign_+1/endpoint.mat",
+      "sha256": "93ab07a6de5a9153d80aa6743acddb84bf6de8fcfd9042fa6e6da9705a460eb9"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/sign_+1/history.csv",
+      "sha256": "18c3636ef7537709d47daa61034c41b4ca3493414e4e8ec74ae2be9c053fcd67"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/sign_+1/initial.json",
+      "sha256": "643059698595fe86de3fb5be821762d2af7ddc715d0e42061f1f53b3f7d0487d"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/sign_+1/initial.mat",
+      "sha256": "76eba657c4b823f34bafeedd66811d0dca06ffba03b3702f36c69a4eb159178f"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/sign_-1/endpoint.json",
+      "sha256": "1156397e78a1693d2ba7dc997fbd1654705b81d0b57433c46672ce8cdba86263"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/sign_-1/endpoint.mat",
+      "sha256": "2dfa8526973dc0b7be0713a941cb685a9bf5ad65c2e7299b7c8a2d806684529d"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/sign_-1/history.csv",
+      "sha256": "9f19c77e0bedf960a6f1d3130ece7949da70131bf4a029dbb80082d55efdca4e"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/sign_-1/initial.json",
+      "sha256": "40a9acd763f3a574884af9613cc3a434084df30784d550f694bcdb2daa9b504f"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/sign_-1/initial.mat",
+      "sha256": "bf2555b900e07fbf04ed83d64d2289d7f36adc1529ea2cf2b30d300e504c8236"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/source.json",
+      "sha256": "b85fa8b921273d814a9c1fda8a3ba3654e336ffa7012a8d64da5693681efa588"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/source.mat",
+      "sha256": "a6d6d7764cb44defeaa80950dc284b66fe16e1cd642e75d9f1db78d65c6aec05"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/gf/status.json",
+      "sha256": "67de9770eca5aea3258ba2fb0cbffb792384dd07186caf681ed00fe446328e4f"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/attempts.csv",
+      "sha256": "9bf5b1b37a8e283ffd1daf8da614b5396ea15d013dcdce12b12c4a96a3fb4c09"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/down_2to1_kick_1000_sign_+1_candidate.mat",
+      "sha256": "babac193cb62354a7451db7b0465e7eafa5982bac42e746752cd1cc059d83571"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/down_2to1_kick_1000_sign_-1_candidate.mat",
+      "sha256": "d28139b016fb441782eeb5182c558d06c5de9a5988bc695ba2f718b5a6f77bc5"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/down_2to1_kick_1000_sign_-1_original_gate.mat",
+      "sha256": "108da3eebd8ad1b60a7dcdc1e8851b27c6294193aa121760519f8dfaf00d1b28"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/down_2to1_kick_1000_sign_-1_original_start1.mat",
+      "sha256": "04dc2bcadb65975b1f2d0da79b169a5830c8e10b6c9e9c1b70de1d65a1c708b4"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/down_2to1_kick_1000_sign_-1_original_start2.mat",
+      "sha256": "942635cb7171760a872a6248c4b121d0f58a12a252e5d045cee0b49ad0c31c1e"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/down_3to2_kick_1000_sign_+1_candidate.mat",
+      "sha256": "07ab726832a51f24df86836e93a7fbfddfafad0a6c6cb4e55c08ca46a480bfe6"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/down_3to2_kick_1000_sign_+1_original_gate.mat",
+      "sha256": "12b3b3bed44a4142e2947e3d68d268d82db586ecb23b75cbd417a59e88894c69"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/down_4to3_kick_1000_sign_+1_candidate.mat",
+      "sha256": "bd65b1ecf248d0fb237eb827e1e27c9b04b36087fc3d149df6b5e9d4061b86b1"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/down_4to3_kick_1000_sign_+1_original_gate.mat",
+      "sha256": "59a306431f279045c542c04e789175511c69e600f54b56452c6a08d64ad63b6b"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/initial_audit.json",
+      "sha256": "2160ee99e574c59522f0e53bb510c380d15d6891919f4b3618bd9f172587af9a"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/status.json",
+      "sha256": "5e991faee7bbb0013270d848a0dd315d5fea9891fc17b06b29adc685a50b4b59"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/up_4_candidate.mat",
+      "sha256": "7f851302a29abd7e11028bbd716802c1379515ca0bf8747944bfcb37591e2f29"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/search/up_4_original_gate.mat",
+      "sha256": "cb4f8ae9438c6d122287f2633f7c130912a3324409e3332230b8fc1293f7363c"
+    },
+    {
+      "path": "data/reference/bcc2hex_lbsd/source_manifest.json",
+      "sha256": "b1eaa9b4ec12c4ab4c57405bb7e6826a6a5281ea617d422f6549b7193fa145d2"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/certification/full_cold.json",
+      "sha256": "3d2718387dbee529d0e980c2146cdd7371d134fe319040b0920299c0b849fdec"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/certification/full_warm.json",
+      "sha256": "181ae8f530659339a6c34976010cde6d7001eb03c4c25ef3cac842208a84b300"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/certification/independent_python/certificate.json",
+      "sha256": "306950621e4b2045c842d3de9eb1752f81d29b8560831892f9af75d52776e904"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/certification/independent_python/independent_cost.json",
+      "sha256": "223f7a4facfff1061b0ee1f3c1e475b4b873309ebdfc1469e3cbb31988ee1e97"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/certification/reduced_cold.json",
+      "sha256": "89265a3c75aff531760c0dda35de7ad8059c68641829d0465badce0a9429414a"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/certification/reduced_warm.json",
+      "sha256": "11ccd3a923becd634abaa1176142a6858a9442781fb0236fb6f6b12fe4b2e6e4"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/certification/source_sha256.txt",
+      "sha256": "057db39f13121ab3039a53025d959715f2539958dc2b9d8130dfad8d16238364"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/certification/verdict.json",
+      "sha256": "47d6669999e9ea07272fc2276e7eb00bf400e94af9620734ee9979fec65d0e71"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/events.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/final.mat",
+      "sha256": "42d1cdbb1873e3cc9f5e31d361c4c99c69ad8c9f038ca66f05247c136987f3a3"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/gf/completion.json",
+      "sha256": "2b3ecc93da104a231cc00df995608040788d899220bf2229051a78f0fe3a5881"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/gf/initial_audit.json",
+      "sha256": "c0cb0fe9608aefb1e6febb440622ba7b7c4acb6a50f0d2ba0b3569bce69ce1e7"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/gf/initial_audit.mat",
+      "sha256": "f9e0bc26245c24724225b0883ecf84a6c7d6e52bd6fc491cb041618ee961f245"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/gf/minus/endpoint.mat",
+      "sha256": "6b2d2c6c541a11ec403d7627643cbc16236fa439bd6417f9d534d5527b900b22"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/gf/minus/endpoint_summary.json",
+      "sha256": "f9fe2368239fe6388a85a8d26bfaca90bc30836344c78259dd37bf1d851645a8"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/gf/minus/history.csv",
+      "sha256": "905e3067a3300762f327f0c6aa619ba5da347806e7b40cd27e816cd87be9572e"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/gf/plus/endpoint.mat",
+      "sha256": "a3c8f8717fd7853a86b80c014c1c789aa4debb08da09ad6deeedce989b1941a6"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/gf/plus/endpoint_summary.json",
+      "sha256": "7d580369f83f88d69b122ba426c832ce6a215454f21d456e807e1982adf19b8c"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/gf/plus/history.csv",
+      "sha256": "4cd87ec6f229f8eb4bf0f7e40132557844fd34d88554a84cc5e23bc833864bf2"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/gf/validation.json",
+      "sha256": "b7a99b7f6c22e47f6542491ef8ecd4bac11aa9a21e634f3e589762436fca17ae"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/metadata.json",
+      "sha256": "ad9577d315f9278404b57efca992264ea079aaa2651614e017095da326cc37b5"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/summary.json",
+      "sha256": "1c361a8df4b8eb9f3ffefa28edf1d63d7591f5636e9afa13d0d6d7c4a9a9fb03"
+    },
+    {
+      "path": "data/reference/bcc2hex_srhisd/verified_negative.mat",
+      "sha256": "30fd7f08420edbf485695ef9271ede3456d8c362f0490d25de3fa74a3dfcc011"
+    },
+    {
+      "path": "data/store_manifest.json",
+      "sha256": "4fe733ca6354cbc7c47829fff1919232a5055edf403b6368d066c171f8de4a43"
+    }
+  ]
+}

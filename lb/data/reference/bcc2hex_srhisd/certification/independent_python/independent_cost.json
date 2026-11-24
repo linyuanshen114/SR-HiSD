@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "hvp": 18693,
+    "force": 1,
+    "precondition": 0,
+    "fft_forward": 37072,
+    "fft_inverse": 37074
+  },
+  "seconds": 7897.367956945673,
+  "peak_rss_kib": 4472400,
+  "fft_unit": "one full-grid scalar transform; batches count their column count"
+}

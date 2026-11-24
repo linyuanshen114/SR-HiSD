@@ -1,0 +1,12 @@
+{
+  "storage": "arrays.h5",
+  "catalog": "compact_views.json",
+  "storage_sha256": "157e0d556bf5270be3774fb919ccd2618388e39d4166984b6e545f1c66942d48",
+  "catalog_sha256": "6e7d6df919fd800f96ba4fbacf5a86fd187ff75416b6a5a940c87bb60d644b0c",
+  "retained_views": 5,
+  "retained_numeric_objects": 10,
+  "numeric_objects_unchanged": true,
+  "numeric_sha_definition": "SHA-256 of little-endian float64 values in MATLAB column order",
+  "original_package": "bcc_hex_disorder_four_cases_20261120",
+  "original_storage_sha256": "f0044a19174deeab56c33e62dcede48196f73b827ef66f8bc594c5e24c32d6bf"
+}

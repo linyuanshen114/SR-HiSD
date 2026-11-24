@@ -1,0 +1,40 @@
+{
+  "sign": -1,
+  "class": "BCC",
+  "residual": 9.9704317318134962E-10,
+  "converged": true,
+  "parent_phi_sha256": "11cb5c9ff6e2e5164ac504b7de431770ba7c1fc19f680522ee009a94cc643c75",
+  "phi_sha256": "391bc2d49695bad51aa9ef3b1cb80d91dd1e83133d54a6f5c6c96ff5ad331cb3",
+  "phase_evidence": {
+    "hex_phase_certified": false
+  },
+  "epsilon": 1E-5,
+  "parent_force_rms": 9.9986068380210791E-8,
+  "parent_force_projection": -2.1235835711915762E-11,
+  "direction_rayleigh": -0.028298192864231346,
+  "direction_raw_residual_rms": 7.8149703197341567E-9,
+  "flow": {
+    "converged": true,
+    "elapsed_seconds": 172.75218895833333,
+    "updates_lower_bound": 2000,
+    "updates_upper_bound": 4000,
+    "update_count_exact": false,
+    "force_rms": 9.9704317318134962E-10,
+    "energy": -0.16603564012926503,
+    "parent_phi_sha256": "11cb5c9ff6e2e5164ac504b7de431770ba7c1fc19f680522ee009a94cc643c75",
+    "direction_sha256": "c98570cf9de689bc39555d3c1faa92dedb476da73a06d0b9397cd96993acac03",
+    "initial_phi_sha256": "1eeb3c5051f5691ea0c8aaa6a5ca8432eff13abb89fed329aaf1035a529620e3",
+    "branch_sign": -1,
+    "options": {
+      "dt": 1,
+      "maxiter": 200000,
+      "tol": 1E-9,
+      "outputEvery": 2000,
+      "store_history": false,
+      "nesterov": false,
+      "chunk_iter": 2000
+    },
+    "checkpoint_file": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2hex_srhisd/sign_-1/srhisd1_gf_checkpoint.mat",
+    "resumed": false
+  }
+}

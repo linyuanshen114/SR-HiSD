@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "case_id": "bcc2hex_srhisd",
+  "parent_phi_sha256": "11cb5c9ff6e2e5164ac504b7de431770ba7c1fc19f680522ee009a94cc643c75",
+  "direction_sha256": "c98570cf9de689bc39555d3c1faa92dedb476da73a06d0b9397cd96993acac03",
+  "raw_negative_mode_verified": true,
+  "phases": [
+    "HEX",
+    "BCC"
+  ],
+  "residuals": [
+    9.933903140618203e-10,
+    9.970431731813496e-10
+  ],
+  "same_parent_verified": true,
+  "complete_bilateral_gf_performed": true,
+  "saddle_search_repeated": false,
+  "gf_options": {
+    "dt": 1,
+    "maxiter": 200000,
+    "tol": 1e-09,
+    "outputEvery": 2000,
+    "store_history": false,
+    "nesterov": false,
+    "chunk_iter": 2000
+  },
+  "endpoint_epsilon": 1e-05,
+  "elapsed_seconds": 360.379709,
+  "strict_minimum_hessian_certification": false,
+  "matlab_exit_code": 0,
+  "independent_force_energy_audits": {
+    "status": "PASS",
+    "cases": 2,
+    "max_force_rms_error": 4.8606805766404795e-18
+  },
+  "source_files_byte_unchanged": 3
+}

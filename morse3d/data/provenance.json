@@ -1,0 +1,66 @@
+{
+  "saved_result_run": "full_reproduction_20261120",
+  "reference_role": "Current validated full computation, used only for saved-result playback. Compute validates article constants and its own states, not another numerical reference.",
+  "files": [
+    {
+      "path": "input/minimum.mat",
+      "source": "data/morse3d/input/minimum.mat",
+      "sha256": "8af6bde9f33d1cc4a4d647895dbbb7b459b7dc43baa38c51cd06270266439c4e"
+    },
+    {
+      "path": "paper/figure1_states.csv",
+      "source": "Article Figure 1 state labels, physical indices and displayed energies (six decimals)",
+      "sha256": "0409853e05191ade771e77b30736e8baddf64eaf8d2302d4fd30cbc4ae1de709"
+    },
+    {
+      "path": "reference/compare_methods/compare_rows.csv",
+      "source": "code_review/morse3d/results/full_reproduction_20261120/compare_methods/compare_rows.csv",
+      "sha256": "975f768e6efea861e19e5beb8e520dea15f454f0bba9766bd782c9cf7623b60d"
+    },
+    {
+      "path": "reference/compare_methods/landscape_edges.csv",
+      "source": "code_review/morse3d/results/full_reproduction_20261120/compare_methods/landscape_edges.csv",
+      "sha256": "b45465f14a7cf77166ce9cde75b163e1c2913184822a3105bc6fda18c50c1c64"
+    },
+    {
+      "path": "reference/compare_methods/landscape_nodes.csv",
+      "source": "code_review/morse3d/results/full_reproduction_20261120/compare_methods/landscape_nodes.csv",
+      "sha256": "36c7653f576cf12ed558190f0a640d331c25ec051aab4c0275ee6071c055db35"
+    },
+    {
+      "path": "reference/compare_methods/result.mat",
+      "source": "code_review/morse3d/results/full_reproduction_20261120/compare_methods/result.mat",
+      "sha256": "f919b055b3a4c2b3e68be417a109bbf206700b8255924e5c087d2befbcae600a"
+    },
+    {
+      "path": "reference/compare_rows.csv",
+      "source": "code_review/morse3d/results/full_reproduction_20261120/landscape/compare_rows.csv",
+      "sha256": "0a7266071aef4a49b2c3f76f2f5fe43ca0a95b7525e553d9e2bc25474f02a180"
+    },
+    {
+      "path": "reference/figure1.pdf",
+      "source": "code_review/morse3d/results/full_reproduction_20261120/plot_figure1/figure1.pdf",
+      "sha256": "cdc77986c7c5e6d79a6d05ede1a1a070c940301de310a9521d7097fef8224756"
+    },
+    {
+      "path": "reference/figure1.png",
+      "source": "code_review/morse3d/results/full_reproduction_20261120/plot_figure1/figure1.png",
+      "sha256": "63f043a09ec82436bc0dc8b9415251dfbaddd8eab6d610a402e5b023912cf44c"
+    },
+    {
+      "path": "reference/landscape_edges.csv",
+      "source": "code_review/morse3d/results/full_reproduction_20261120/landscape/landscape_edges.csv",
+      "sha256": "d6114b9af63cdf4601ff56fd494e5413ccd3d43c9d5de406c86cb9b484e85aa7"
+    },
+    {
+      "path": "reference/landscape_nodes.csv",
+      "source": "code_review/morse3d/results/full_reproduction_20261120/landscape/landscape_nodes.csv",
+      "sha256": "55f8cec5e7533f9379cf6b34b76886a9a8daa753cda81573db2b80b53e52ced1"
+    },
+    {
+      "path": "reference/result.mat",
+      "source": "code_review/morse3d/results/full_reproduction_20261120/landscape/result.mat",
+      "sha256": "6f84073bcb3025080de65d8408f8a4b59bdf61999a66cb974daee0b8c3caf797"
+    }
+  ]
+}

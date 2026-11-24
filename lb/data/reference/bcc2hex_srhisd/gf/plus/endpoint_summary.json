@@ -1,0 +1,240 @@
+{
+  "sign": 1,
+  "class": "HEX",
+  "residual": 9.9339031406182031E-10,
+  "converged": true,
+  "parent_phi_sha256": "11cb5c9ff6e2e5164ac504b7de431770ba7c1fc19f680522ee009a94cc643c75",
+  "phi_sha256": "778adb0db0622d120816b0e4ff7d90045eb23810940dff5670ec1cf45e801114",
+  "phase_evidence": {
+    "phase": "HEX",
+    "numerical_phase": "HEX",
+    "hex_phase_certified": true,
+    "spectrum": {
+      "primary_vectors": [
+        [
+          -12,
+          0,
+          -12
+        ],
+        [
+          -12,
+          12,
+          0
+        ],
+        [
+          0,
+          -12,
+          -12
+        ],
+        [
+          0,
+          12,
+          12
+        ],
+        [
+          12,
+          -12,
+          0
+        ],
+        [
+          12,
+          0,
+          12
+        ]
+      ],
+      "primary_amplitudes": [
+        0.54442673501347,
+        0.54442673501345817,
+        0.54442673501345662,
+        0.54442673501345662,
+        0.54442673501345817,
+        0.54442673501347
+      ],
+      "column_axis": [
+        1,
+        1,
+        -1
+      ],
+      "primary_power_fraction": 0.99920000789493435,
+      "primary_amplitude_relative_spread": 2.4674942896829322E-14,
+      "off_plane_power_fraction": 7.4171513571546109E-14,
+      "off_lattice_power_fraction": 7.5264670433101618E-14,
+      "triad_phase_error_radians": 3.7242344624877077E-17,
+      "sixfold_relative_defect": 1.9232109501249962E-14,
+      "sixfold_covered_power_fraction": 0.99999999999992462,
+      "checks": {
+        "principal_star_matches": true,
+        "principal_rank2": true,
+        "equal_radius": true,
+        "primary_power": true,
+        "amplitude_equality": true,
+        "cylindrical_axis_invariance": true,
+        "triangular_reciprocal_lattice": true,
+        "positive_cylinder_triad": true,
+        "physical_hex_sixfold": true,
+        "sixfold_coverage": true
+      },
+      "morphology_pass": true,
+      "original_column_axis": [
+        1,
+        1,
+        -1
+      ],
+      "canonical_comparison_axis": [
+        1,
+        1,
+        -1
+      ]
+    },
+    "reference_alignment": {
+      "continuous_grid_shift": [
+        -6.5143045869218915E-5,
+        0.00039127626461623813,
+        0.00032613321874701924
+      ],
+      "rms_difference": 6.1622205551941706E-6,
+      "relative_rms_difference": 4.6190044823039969E-6,
+      "method": "two independent primary-wave phases; full-spectrum Parseval residual, no amplitude rescale",
+      "global_optimum_claim": false,
+      "source_or_target_modified": false
+    },
+    "endpoint_proper_rotation": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "proper_reference_rotation": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "reference_relative_rms_tolerance": 1E-5,
+    "reference_morphology_pass": true,
+    "phi_sha256": "778adb0db0622d120816b0e4ff7d90045eb23810940dff5670ec1cf45e801114",
+    "reference_phi_sha256": "5b105acd1f42ba66c9e56a3f0fe6251f783360d852e8964741e97316a8305405",
+    "strict_minimum_hessian_certified": false,
+    "source_field_modified": false,
+    "field_relaxation_performed": false,
+    "reason": "",
+    "reference_spectrum": {
+      "primary_vectors": [
+        [
+          -12,
+          0,
+          -12
+        ],
+        [
+          -12,
+          12,
+          0
+        ],
+        [
+          0,
+          -12,
+          -12
+        ],
+        [
+          0,
+          12,
+          12
+        ],
+        [
+          12,
+          -12,
+          0
+        ],
+        [
+          12,
+          0,
+          12
+        ]
+      ],
+      "primary_amplitudes": [
+        0.54442673501170313,
+        0.54442673500603467,
+        0.54442673500546857,
+        0.54442673500546857,
+        0.54442673500603467,
+        0.54442673501170313
+      ],
+      "column_axis": [
+        1,
+        1,
+        -1
+      ],
+      "primary_power_fraction": 0.9992000078739538,
+      "primary_amplitude_relative_spread": 1.1451620606024141E-11,
+      "off_plane_power_fraction": 2.110730336167171E-11,
+      "off_lattice_power_fraction": 2.1110427516757148E-11,
+      "triad_phase_error_radians": 5.0705086288536927E-17,
+      "sixfold_relative_defect": 8.99232117344248E-12,
+      "sixfold_covered_power_fraction": 0.99999999997889,
+      "checks": {
+        "principal_star_matches": true,
+        "principal_rank2": true,
+        "equal_radius": true,
+        "primary_power": true,
+        "amplitude_equality": true,
+        "cylindrical_axis_invariance": true,
+        "triangular_reciprocal_lattice": true,
+        "positive_cylinder_triad": true,
+        "physical_hex_sixfold": true,
+        "sixfold_coverage": true
+      },
+      "morphology_pass": true
+    }
+  },
+  "epsilon": 1E-5,
+  "parent_force_rms": 9.9986068380210791E-8,
+  "parent_force_projection": -2.1235835711915762E-11,
+  "direction_rayleigh": -0.028298192864231346,
+  "direction_raw_residual_rms": 7.8149703197341567E-9,
+  "flow": {
+    "converged": true,
+    "elapsed_seconds": 184.16087870833334,
+    "updates_lower_bound": 2000,
+    "updates_upper_bound": 4000,
+    "update_count_exact": false,
+    "force_rms": 9.9339031406182031E-10,
+    "energy": -0.20040612762064502,
+    "parent_phi_sha256": "11cb5c9ff6e2e5164ac504b7de431770ba7c1fc19f680522ee009a94cc643c75",
+    "direction_sha256": "c98570cf9de689bc39555d3c1faa92dedb476da73a06d0b9397cd96993acac03",
+    "initial_phi_sha256": "e5d1365a14d60f6148b0e9252887c3607d8e69e939cded28a95002245e98918b",
+    "branch_sign": 1,
+    "options": {
+      "dt": 1,
+      "maxiter": 200000,
+      "tol": 1E-9,
+      "outputEvery": 2000,
+      "store_history": false,
+      "nesterov": false,
+      "chunk_iter": 2000
+    },
+    "checkpoint_file": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2hex_srhisd/sign_+1/srhisd1_gf_checkpoint.mat",
+    "resumed": false
+  }
+}

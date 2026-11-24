@@ -1,0 +1,14 @@
+{
+  "branch": "plus",
+  "sign": 1,
+  "class": "disorder",
+  "converged": true,
+  "force_rms": 9.9308659543161143E-10,
+  "energy": 9.6792742711302183E-18,
+  "seconds": 305.93691854166667,
+  "updates_lower_bound": 2000,
+  "updates_upper_bound": 4000,
+  "parent_phi_sha256": "01f2c562d07d5dc767bc2b6428dcc62cc371c5bddcaa33b719790aeaf96ed90e",
+  "phi_sha256": "57ba7da4b13aa040b42042020bd68a43d708ffd4be2cb7fa31545e0c1b8e91d4",
+  "direction_sha256": "11d3e4b08e06937214489a8d5d3b01dabea7a76fdba100211d9b1f4829e273e9"
+}

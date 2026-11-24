@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "parent_phi_sha256": "11cb5c9ff6e2e5164ac504b7de431770ba7c1fc19f680522ee009a94cc643c75",
+  "direction_sha256": "c98570cf9de689bc39555d3c1faa92dedb476da73a06d0b9397cd96993acac03",
+  "negative_mode_verified": true,
+  "saddle_search_repeated": false,
+  "N": 128,
+  "L": 106.6291905158008,
+  "par": {
+    "tau": -0.3,
+    "gamma": 0.8,
+    "xi": 1.0,
+    "q0": 1.0
+  },
+  "endpoint_epsilon": 1e-05,
+  "dt": 1.0,
+  "force_tolerance": 1e-09,
+  "maxiter": 200000,
+  "source_run": "new_sr_gf_20261120",
+  "independent_audit": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/independent_audit.json",
+  "source_parent_file_sha256": "42d1cdbb1873e3cc9f5e31d361c4c99c69ad8c9f038ca66f05247c136987f3a3",
+  "files": [
+    {
+      "path": "plus/endpoint.mat",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2hex_srhisd/sign_+1/endpoint.mat",
+      "sha256": "a3c8f8717fd7853a86b80c014c1c789aa4debb08da09ad6deeedce989b1941a6"
+    },
+    {
+      "path": "plus/endpoint_summary.json",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2hex_srhisd/sign_+1/endpoint_summary.json",
+      "sha256": "7d580369f83f88d69b122ba426c832ce6a215454f21d456e807e1982adf19b8c"
+    },
+    {
+      "path": "plus/history.csv",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2hex_srhisd/sign_+1/history.csv",
+      "sha256": "4cd87ec6f229f8eb4bf0f7e40132557844fd34d88554a84cc5e23bc833864bf2"
+    },
+    {
+      "path": "minus/endpoint.mat",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2hex_srhisd/sign_-1/endpoint.mat",
+      "sha256": "6b2d2c6c541a11ec403d7627643cbc16236fa439bd6417f9d534d5527b900b22"
+    },
+    {
+      "path": "minus/endpoint_summary.json",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2hex_srhisd/sign_-1/endpoint_summary.json",
+      "sha256": "f9fe2368239fe6388a85a8d26bfaca90bc30836344c78259dd37bf1d851645a8"
+    },
+    {
+      "path": "minus/history.csv",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2hex_srhisd/sign_-1/history.csv",
+      "sha256": "905e3067a3300762f327f0c6aa619ba5da347806e7b40cd27e816cd87be9572e"
+    },
+    {
+      "path": "initial_audit.mat",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2hex_srhisd/initial_audit.mat",
+      "sha256": "f9e0bc26245c24724225b0883ecf84a6c7d6e52bd6fc491cb041618ee961f245"
+    },
+    {
+      "path": "initial_audit.json",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2hex_srhisd/initial_audit.json",
+      "sha256": "c0cb0fe9608aefb1e6febb440622ba7b7c4acb6a50f0d2ba0b3569bce69ce1e7"
+    },
+    {
+      "path": "validation.json",
+      "source": "/Users/yuanshenlin/Projects/paper/SR-HiSD/code/code_review/lb/results/new_sr_gf_20261120/bcc2hex_srhisd/validation.json",
+      "sha256": "b7a99b7f6c22e47f6542491ef8ecd4bac11aa9a21e634f3e589762436fca17ae"
+    }
+  ]
+}

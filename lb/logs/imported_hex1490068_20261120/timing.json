@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "upward_only": {
+    "iterations": 26987,
+    "solver_seconds": 56449.427268,
+    "solver_hours": 15.680396463333333,
+    "diagnostic_seconds": 14418.061355,
+    "attempt_seconds": 70870.547266
+  },
+  "sequential_route": {
+    "iterations": 126706,
+    "solver_seconds": 119174.366065,
+    "diagnostic_seconds": 57674.675296,
+    "route_wall_seconds": 176913.350436
+  },
+  "bilateral_gf": {
+    "solver_seconds": 875.927821,
+    "wall_seconds": 892.737188
+  },
+  "failed_branches_included": true,
+  "direct_route_included": false
+}

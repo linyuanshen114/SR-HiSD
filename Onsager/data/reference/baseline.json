@@ -1,0 +1,29 @@
+{
+  "source_run": "full_reproduction_20261120",
+  "mode": "compute",
+  "quick": false,
+  "actual_integration_steps": 183810,
+  "meaning": "The validated fresh result is the current saved/reference result. This file is provenance, not a runtime comparison target.",
+  "files": [
+    {
+      "path": "data/reference/result.mat",
+      "source": "results/full_reproduction_20261120/search/result.mat",
+      "sha256": "5ba3f7770fcf4dd71db4b978610749511d10d0629cc3c37fbc1ae2734d25f395"
+    },
+    {
+      "path": "data/reference/nodes.csv",
+      "source": "results/full_reproduction_20261120/search/nodes.csv",
+      "sha256": "13e1607d7024faa926ff7accad42c52b631b4b50a927944c51c8f1ffa476ea67"
+    },
+    {
+      "path": "data/reference/figure2.png",
+      "source": "results/full_reproduction_20261120/plot_figure2/figure2.png",
+      "sha256": "79965eec1fef56bd53b3d81793e1462e366bd28c56ecc4bdd23013417558a42a"
+    },
+    {
+      "path": "data/reference/figure2.pdf",
+      "source": "results/full_reproduction_20261120/plot_figure2/figure2.pdf",
+      "sha256": "654a8f68a60e2b6da77f0d9bc058a0424b549a86c4a0a2c34a0b71a0c779ebf9"
+    }
+  ]
+}
