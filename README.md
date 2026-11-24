@@ -1,6 +1,65 @@
 # SR-HiSD reproduction
 
-Open `main.m` in MATLAB and press **Run**, or run it from `code_review`:
+Symmetry-reduced high-index saddle dynamics (SR-HiSD) searches for saddle
+points of a prescribed Morse index in energy landscapes with continuous
+symmetries. It formulates HiSD on the quotient space of symmetry-equivalent
+states and lifts the dynamics to the original variables, with ascent
+directions orthogonal to the symmetry orbits. This package reproduces the
+Morse-cluster, Onsager and Landau–Brazovskii experiments in Table 1 and
+Figures 1–3, including saddle searches, solution landscapes and transition
+pathways.
+
+## SR-HiSD dynamics
+
+For a symmetry-invariant energy $E(x)$, let $P_x$ be the orthogonal projector
+onto the horizontal space $\mathcal H_x=T_x(G\cdot x)^\perp$. With horizontal,
+orthonormal directions $v_1,\ldots,v_k$, the index-$k$ SR-HiSD dynamics are
+
+```math
+\begin{aligned}
+\dot x
+&=-\left(I-2\sum_{j=1}^{k}v_jv_j^\top\right)\nabla E(x),\\
+\dot v_i
+&=-\left(I-v_iv_i^\top-2\sum_{j=1}^{i-1}v_jv_j^\top\right)
+P_x\nabla^2E(x)P_xv_i
++DP_x[\dot x]v_i,\qquad i=1,\ldots,k.
+\end{aligned}
+```
+
+Here $vv^\top u=v\langle v,u\rangle$ uses the model's inner product. The
+position evolves uphill along the $k$ ascent directions and downhill in
+their orthogonal complement. The reduced Hessian $P_x\nabla^2E(x)P_x$
+excludes symmetry directions, while $DP_x[\dot x]v_i$ maintains the
+horizontal constraint $P_xv_i=v_i$ as the state changes.
+
+## Numerical method
+
+The horizontal projector is constructed from infinitesimal symmetry
+generators using tolerance-based Gram–Schmidt orthonormalization. These
+generators represent rigid motions for Morse clusters, rotations for the
+Onsager model and periodic translations for the LB model.
+
+The general scheme combines a reflected-gradient Euler position step
+with bounded Barzilai–Borwein (BB2) step sizes. The previous ascent frame
+is projected onto the horizontal space at the updated state, and projected
+LOBPCG/Rayleigh–Ritz updates approximate the $k$ smallest reduced-Hessian
+modes while maintaining orthonormality. The LB implementation uses Fourier
+pseudospectral discretization and semi-implicit position steps. Upward and
+downward searches connect saddles of different indices; bilateral gradient
+flows from index-1 saddles identify the connected phases or minima.
+Model parameters and implementation details are given in each task's README.
+
+## Recommended lightweight package
+
+For reproduction, download [SR_HiSD_code_review_light.zip](SR_HiSD_code_review_light.zip)
+and extract it. This self-contained lightweight package includes the
+numerical code, required inputs, saved results, production logs and figures.
+Run `main.m` inside the extracted `code_review_light/` folder. The commands
+below apply from either package root: `code_review/` or `code_review_light/`.
+
+## Reproduce all experiments
+
+Open `main.m` in MATLAB and press **Run**, or run it from the package root:
 
 ```matlab
 main
@@ -15,7 +74,7 @@ full LB calculations require more memory and can take a long time.
 
 ## Experiments and outputs
 
-All paths below are relative to `code_review`.
+All paths below are relative to the package root.
 
 | Task | Article result | Main output |
 |---|---|---|

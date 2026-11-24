@@ -198,8 +198,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3054,
-      "sha256": "78154859562d9068179045e9fb6fa475a583b27aeef4f89d4e89c84360aad7ab"
+      "bytes": 5839,
+      "sha256": "4fed5ef4e0b85dc6fa71bd4f8475935ad6b23f2e750b1b4d88c9ce02f11d6c51"
+    },
+    {
+      "path": "SR_HiSD_code_review_light.zip",
+      "bytes": 883011136,
+      "sha256": "9c8b525ec2205381a9d56ebabfa95340fbfcfaa2fef6aa33fa3cbd834d5fc376"
     },
     {
       "path": "common/README.md",
