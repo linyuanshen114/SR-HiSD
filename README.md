@@ -5,7 +5,7 @@ points of a prescribed Morse index in energy landscapes with continuous
 symmetries. It formulates HiSD on the quotient space of symmetry-equivalent
 states and lifts the dynamics to the original variables, with ascent
 directions orthogonal to the symmetry orbits. This package reproduces the
-Morse-cluster, Onsager and Landau–Brazovskii experiments in Table 1 and
+Morse-cluster, Onsager and Landau–Brazovskii experiments in Table 1-2 and
 Figures 1–3, including saddle searches, solution landscapes and transition
 pathways.
 
