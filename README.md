@@ -8,6 +8,7 @@ directions orthogonal to the symmetry orbits. This package reproduces the
 Morse-cluster, Onsager and Landau–Brazovskii experiments in Table 1-2 and
 Figures 1–3, including saddle searches, solution landscapes and transition
 pathways.
+The preprint is now available on [arXiv](http://arxiv.org/abs/2611.31930).
 
 ## SR-HiSD dynamics
 
